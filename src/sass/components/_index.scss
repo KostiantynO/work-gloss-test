@@ -1,4 +1,5 @@
-// Header
+// || --------------- HEADER ---------------
+// top row
 @import './social/social';
 @import './social/social__title';
 @import './social/social__list';
@@ -8,6 +9,7 @@
 @import './top-nav/top-nav__list';
 @import './top-nav/top-nav__link';
 
+// bottom row
 @import './furniture/furniture';
 @import './furniture/furniture__list';
 @import './furniture/furniture__link';
@@ -21,9 +23,14 @@
 @import './order/order__link';
 @import './order/order__cart';
 @import './order/order__desc';
-@import './order/order__btn';
+@import './shared/primary-btn';
 
-// Main
+// || --------------- MAIN ---------------
+// || ----- Hero -----
+@import './hero/hero-wrapper';
+@import './hero/hero__title';
+@import './hero/hero__furniture-name';
+@import './hero/hero__desc';
 
-// Footer
+// || --------------- FOOTER ---------------
 @import './brand/brand__desc';

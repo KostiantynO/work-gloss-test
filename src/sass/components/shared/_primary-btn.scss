@@ -1,5 +1,5 @@
 /* Замовити дзвінок */
-.order__btn {
+.primary-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@
   max-width: 500px;
   max-height: 51px;
 
-  padding: 14px;
+  padding: 14px 46px;
 
   font-family: inherit; /* 18 sp • H5 Headline */
   color: var(--white);
@@ -19,9 +19,13 @@
 
   background-color: var(--color-accent); /* color3 */
   border-radius: 3px;
+  border: 1px solid transparent;
 
   &:focus,
   &:hover {
     background-color: darken(#44c697, 5);
   }
+
+  /* Замовити дзвінок */
+  // &__desc {}
 }

@@ -105,6 +105,24 @@ body {
   }
 }
 
+/* Новинка! */
+.hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  /* 64 sp • H1 Headline */
+  color: var(--color-text-primary);
+}
+
+/* Ліжко Ornella */
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  /* 36 sp • H3 Headline */
+  color: var(--color-text-primary);
+}
+
 @media screen and (min-width: 1440px) {
   .social {
     display: flex;
@@ -222,15 +240,19 @@ body {
   align-items: center;
 }
 
+.order__desc {
+  text-transform: uppercase;
+}
+
 /* Замовити дзвінок */
-.order__btn {
+.primary-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-width: 278px;
   max-width: 500px;
   max-height: 51px;
-  padding: 14px;
+  padding: 14px 46px;
   font-family: inherit;
   /* 18 sp • H5 Headline */
   color: var(--white);
@@ -243,10 +265,54 @@ body {
   background-color: var(--color-accent);
   /* color3 */
   border-radius: 3px;
+  border: 1px solid transparent;
+  /* Замовити дзвінок */
 }
 
-.order__btn:focus, .order__btn:hover {
+.primary-btn:focus, .primary-btn:hover {
   background-color: #38b88a;
+}
+
+/* Rectangle 138 */
+.hero-wrapper {
+  position: relative;
+  max-width: 462px;
+  padding: 99px 74px 101px 75px;
+  margin-right: auto;
+  margin-left: 51px;
+  text-align: center;
+  background: #ffffff;
+  /* Rectangle 139 */
+}
+
+.hero-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 15px;
+  height: 100%;
+  background: var(--color-accent);
+  /* color3 */
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__title {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__furniture-name {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__desc {
+    margin-bottom: 30px;
+  }
 }
 
 .brand__desc {

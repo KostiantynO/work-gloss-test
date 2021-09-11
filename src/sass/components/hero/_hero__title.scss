@@ -1,0 +1,3 @@
+.hero__title {
+  @include mq($laptop, $mb: 50px);
+}

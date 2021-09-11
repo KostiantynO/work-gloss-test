@@ -1,0 +1,11 @@
+/* Новинка! */
+.hero-title {
+  @include fz(64px, 700, 1); /* 64 sp • H1 Headline */
+  color: var(--color-text-primary);
+}
+
+/* Ліжко Ornella */
+.section-title {
+  @include fz(36px, 700, 1.25); /* 36 sp • H3 Headline */
+  color: var(--color-text-primary);
+}
