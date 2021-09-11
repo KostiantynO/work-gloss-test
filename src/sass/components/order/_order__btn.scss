@@ -1,0 +1,27 @@
+/* Замовити дзвінок */
+.order__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 278px;
+  max-width: 500px;
+  max-height: 51px;
+
+  padding: 14px;
+
+  font-family: inherit; /* 18 sp • H5 Headline */
+  color: var(--white);
+  @include fz(18px, 700, 1.25);
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  background-color: var(--color-accent); /* color3 */
+  border-radius: 3px;
+
+  &:focus,
+  &:hover {
+    background-color: darken(#44c697, 5);
+  }
+}

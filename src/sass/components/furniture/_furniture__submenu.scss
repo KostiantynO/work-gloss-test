@@ -1,0 +1,12 @@
+.furniture__submenu {
+  position: absolute;
+
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition-property: opacity;
+  @include transition;
+}
+
+.furniture__subitem {
+}

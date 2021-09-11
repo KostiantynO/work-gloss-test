@@ -1,0 +1,15 @@
+.container {
+  @include paddings($pr: 20px, $pl: 20px);
+  @include mq($mobile, $mr: auto, $ml: auto) {
+    max-width: map-get($breakpoints, 'tablet-container');
+  }
+
+  @include mq($tablet) {
+    max-width: map-get($breakpoints, $tablet);
+  }
+
+  @include mq($laptop, $pr: 51px, $pl: 51px) {
+    max-width: map-get($breakpoints, $desktop);
+  }
+  outline: 1px dashed red;
+}

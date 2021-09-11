@@ -1,0 +1,15 @@
+$mobile: 'mobile';
+$tablet: 'tablet';
+$laptop: 'laptop';
+$pre-laptop: 'laptop';
+$desktop: 'desktop';
+
+$breakpoints: (
+  'mobile': 320px,
+  'tablet-container': 688px,
+  'tablet': 768px,
+  'pre-laptop': 1080px,
+  'laptop-container': 1200px,
+  'laptop': 1440px,
+  'desktop': 1920px,
+);

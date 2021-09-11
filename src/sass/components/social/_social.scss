@@ -1,0 +1,6 @@
+.social {
+  @include mq($laptop) {
+    display: flex;
+    align-items: center;
+  }
+}

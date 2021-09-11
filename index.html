@@ -15,13 +15,265 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">/* Хедер */</header>
+    <header class="page-header">
+      <div class="container">
+        <nav class="top-nav">
+          <div class="social top-nav__social">
+            <b class="social__title"> Ми в соціальних мережах: </b>
+
+            <ul class="social__list">
+              <li class="social__item">
+                <a rel="noopener noreferrer nofollow" href="#">
+                  <svg class="social__svg" width="40" height="40">
+                    <use href="./images/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a rel="noopener noreferrer nofollow" href="#">
+                  <svg class="social__svg" width="40" height="40">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a rel="noopener noreferrer nofollow" href="#">
+                  <svg class="social__svg" width="40" height="40">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="phones">
+            <ul class="phones__list">
+              <li class="phones__item">
+                <a class="phones__link" href="tel:0991112233">(099) 111 22 33</a>
+              </li>
+              <li class="phones__item">
+                <a class="phones__link" href="tel:0981112233">(098) 111 22 33</a>
+              </li>
+              <li class="phones__item">
+                <a class="phones__link" href="tel:0971112233">(097) 111 22 33</a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="top-nav__list">
+            <li class="top-nav__item">
+              <a class="top-nav__link top-nav__link--current" href="./">Головна</a>
+            </li>
+
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#0">Акції</a>
+            </li>
+
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#">Доставка та оплата</a>
+            </li>
+
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#">Про нас</a>
+            </li>
+
+            <li class="top-nav__item">
+              <a class="top-nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <nav class="primary-nav">
+          <div class="furniture">
+            <ul class="furniture__list">
+              <li class="furniture__item">
+                <a class="furniture__link" href="#">Дивани</a>
+
+                <svg class="furniture__svg" width="40" height="40">
+                  <use href="./images/sprite.svg#chevron"></use>
+                </svg>
+
+                <ul class="furniture__submenu">
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Дивани 1</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Дивани 2</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Дивани 3</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Дивани 4</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Дивани 5</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="furniture__item">
+                <a class="furniture__link" href="#">Ліжка</a>
+
+                <svg class="furniture__svg" width="40" height="40">
+                  <use href="./images/sprite.svg#chevron"></use>
+                </svg>
+
+                <ul class="furniture__submenu">
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Ліжка 1</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Ліжка 2</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Ліжка 3</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Ліжка 4</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Ліжка 5</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="furniture__item">
+                <a class="furniture__link" href="#">Крісла</a>
+
+                <svg class="furniture__svg" width="40" height="40">
+                  <use href="./images/sprite.svg#chevron"></use>
+                </svg>
+
+                <ul class="furniture__submenu">
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Крісла 1</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Крісла 2</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Крісла 3</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Крісла 4</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Крісла 5</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="furniture__item">
+                <a class="furniture__link" href="#">Комоди</a>
+
+                <svg class="furniture__svg" width="40" height="40">
+                  <use href="./images/sprite.svg#chevron"></use>
+                </svg>
+
+                <ul class="furniture__submenu">
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Комоди 1</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Комоди 2</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Комоди 3</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Комоди 4</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Комоди 5</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="furniture__item">
+                <a class="furniture__link" href="#">Шафи</a>
+
+                <svg class="furniture__svg" width="40" height="40">
+                  <use href="./images/sprite.svg#chevron"></use>
+                </svg>
+
+                <ul class="furniture__submenu">
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Шафи 1</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Шафи 2</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Шафи 3</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Шафи 4</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Шафи 5</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="furniture__item">
+                <a class="furniture__link" href="#">Кухня</a>
+
+                <svg class="furniture__svg" width="40" height="40">
+                  <use href="./images/sprite.svg#chevron"></use>
+                </svg>
+
+                <ul class="furniture__submenu">
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Кухня 1</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Кухня 2</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Кухня 3</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Кухня 4</a>
+                  </li>
+                  <li class="furniture__subitem">
+                    <a class="furniture__sublink" href="#">Кухня 5</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <a class="logo" href="./">
+              <svg class="logo__svg" width="125" height="75">
+                <use href="./images/sprite.svg#logo"></use>
+              </svg>
+
+              <span class="logo__desc">Furniture.test</span>
+            </a>
+          </div>
+        </nav>
+
+        <div class="order">
+          <a class="order__link" href="#">
+            <div class="order__cart">
+              <svg class="order__svg" width="30" height="30">
+                <use href="./sprite.svg#cart"></use>
+              </svg>
+
+              <span class="order__desc">Кошик</span>
+            </div>
+          </a>
+
+          <button class="order__btn" type="button">
+            <span class="btn__desc">Замовити дзвінок</span>
+          </button>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="section hero">
+        hero-bg
+
         <div class="container">
-          Furniture.test
+          hero container
           <p></p>
         </div>
       </section>
@@ -52,7 +304,15 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <button type="button" class="back-to-top-btn"></button>
+        <button class="back-to-top-btn" type="button"></button>
+
+        <div class="brand">
+          <svg class="brand__logo" width="20" height="21">
+            <use href="./images/sprite.svg#brand_logo"></use>
+          </svg>
+
+          <p class="brand__desc">Глянець — розробка інтернет-магазинів</p>
+        </div>
       </div>
     </footer>
   </body>

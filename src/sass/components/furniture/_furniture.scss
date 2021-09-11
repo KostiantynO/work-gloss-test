@@ -1,0 +1,5 @@
+.furniture {
+  @include mq($laptop) {
+    display: flex;
+  }
+}

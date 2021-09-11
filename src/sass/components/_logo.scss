@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  /* Furniture.test */ /* 36 sp • H3 Headline */
+  @include fz(36px, 700, 1.25);
+
+  /* Inside Auto Layout */
+  margin: 0 15px;
+
+  &__text::first-letter {
+    color: var(--color-accent); /* color3 */
+  }
+}

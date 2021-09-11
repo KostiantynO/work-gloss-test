@@ -1,0 +1,5 @@
+.social__list {
+  @include mq($pre-laptop) {
+    display: flex;
+  }
+}

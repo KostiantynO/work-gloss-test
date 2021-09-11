@@ -1,0 +1,5 @@
+body {
+  font-family: var(--body-sans-serif);
+  @include fz(18px, 700, 1.25);
+  color: var(--color-text-primary);
+}

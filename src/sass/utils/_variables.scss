@@ -1,0 +1,14 @@
+:root {
+  --body-sans-serif: 'Montserrat', sans-serif;
+  --brand-sans-serif: 'Cuprum', sans-serif;
+
+  --color-text-primary: #1e2e36;
+  --color-accent: #44c697;
+  --white: #ffffff;
+
+  // Transitions
+  --time: 250ms;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+$precision: (10 * 3);

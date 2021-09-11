@@ -1,0 +1,5 @@
+.top-nav {
+  @include mq($laptop) {
+    display: flex;
+  }
+}
