@@ -1,0 +1,3 @@
+.goods-filter {
+  @include mq($mobile, $pb: 87px);
+}

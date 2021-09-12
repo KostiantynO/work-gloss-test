@@ -26,6 +26,16 @@ ol {
   outline: none;
 }
 
+img {
+  display: block;
+}
+
+.is-hidden {
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
+}
+
 /* montserrat-regular - latin_cyrillic */
 @font-face {
   font-family: 'Montserrat';
@@ -116,12 +126,19 @@ body {
 }
 
 /* Ліжко Ornella */
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.25;
-  /* 36 sp • H3 Headline */
+.section__title {
+  text-align: center;
   color: var(--color-text-primary);
+}
+
+@media screen and (min-width: 1440px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.25;
+    /* 36 sp • H3 Headline */
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -474,6 +491,88 @@ body {
 
 .back-btn {
   margin-right: 8px;
+}
+
+.advantages {
+  contain: content;
+}
+
+.advantages__list {
+  position: relative;
+}
+
+@media screen and (min-width: 1440px) {
+  .advantages__list {
+    margin-top: -30px;
+    margin-left: -30px;
+    display: flex;
+  }
+}
+
+.advantages__item {
+  transition-property: transform, opacity;
+  transition: var(--time) var(--cubic);
+}
+
+@media screen and (min-width: 1440px) {
+  .advantages__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+.advantages__item.is-hidden {
+  position: absolute;
+  top: 50%;
+  left: 210%;
+}
+
+@media screen and (min-width: 320px) {
+  .goods-filter {
+    padding-bottom: 87px;
+  }
+}
+
+.goods-filter__list {
+  outline: 1px dotted brown;
+}
+
+@media screen and (min-width: 320px) {
+  .goods-filter__list {
+    margin-top: -20px;
+    margin-left: -20px;
+    flex-basis: calc(100% / 2 - 20px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .goods-filter__list {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.goods-filter__item {
+  outline: 1px double blue;
+  max-width: fit-content;
+}
+
+@media screen and (min-width: 320px) {
+  .goods-filter__item {
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    flex-basis: calc(100% / 2 - 20px);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .goods-filter__item {
+    flex-basis: calc(100% / 6 - 20px);
+  }
 }
 
 .brand__desc {

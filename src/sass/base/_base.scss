@@ -18,3 +18,7 @@ ol {
 a {
   @extend %link;
 }
+
+img {
+  @extend %img;
+}

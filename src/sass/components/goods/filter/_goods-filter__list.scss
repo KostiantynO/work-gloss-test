@@ -1,0 +1,28 @@
+.goods-filter__list {
+  @include mq($mobile, $mt: -20px, $ml: -20px) {
+    flex-basis: calc(100% / 2 - 20px);
+  }
+  outline: 1px dotted brown;
+  @include mq($laptop, $mr: 0) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.goods-filter__item {
+  // &:not(:last-child) {
+  //   @include margins($ml: auto, $mr: auto, $mb: 20px);
+  // }
+
+  outline: 1px double blue;
+  max-width: fit-content;
+
+  @include mq($mobile, $mt: 20px, $ml: 20px, $mb: 0) {
+    flex-basis: calc(100% / 2 - 20px);
+  }
+
+  @include mq($laptop) {
+    flex-basis: calc(100% / 6 - 20px);
+  }
+}

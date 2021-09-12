@@ -5,7 +5,11 @@
 }
 
 /* Ліжко Ornella */
-.section-title {
-  @include fz(36px, 700, 1.25); /* 36 sp • H3 Headline */
+.section__title {
+  @include mq($laptop, $mb: 50px) {
+    @include fz(36px, 700, 1.25); /* 36 sp • H3 Headline */
+  }
+
+  text-align: center;
   color: var(--color-text-primary);
 }
