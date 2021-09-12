@@ -1,36 +1,54 @@
-// || --------------- HEADER ---------------
+// --------------- HEADER ---------------
 // top row
-@import './social/social';
-@import './social/social__title';
-@import './social/social__list';
-@import './social/social__svg';
+@import './shared/social/social';
+@import './shared/social/social__title';
+@import './shared/social/social__list';
+@import './shared/social/social__svg';
 
-@import './top-nav/top-nav';
-@import './top-nav/top-nav__list';
-@import './top-nav/top-nav__link';
+@import './page-header/page-header';
+@import './page-header/top-nav/phones/phones';
+@import './page-header/top-nav/phones/phones__svg';
+@import './page-header/top-nav/phones/phones__list';
+@import './page-header/top-nav/phones/phones__link';
+@import './page-header/top-nav/phones/phones__submenu';
+
+@import './page-header/top-nav/top-nav';
+@import './page-header/top-nav/top-nav__list';
+@import './page-header/top-nav/top-nav__link';
 
 // bottom row
-@import './furniture/furniture';
-@import './furniture/furniture__list';
-@import './furniture/furniture__link';
-@import './furniture/furniture__svg';
-@import './furniture/furniture__submenu';
-@import './furniture/furniture__sublink';
+@import './page-header/bottom-row/bottom-row';
 
-@import './logo';
+@import './page-header/bottom-row/primary-nav/primary-nav';
 
-@import './order/order';
-@import './order/order__link';
-@import './order/order__cart';
-@import './order/order__desc';
+@import './page-header/bottom-row/primary-nav/furniture/furniture';
+@import './page-header/bottom-row/primary-nav/furniture/furniture__list';
+@import './page-header/bottom-row/primary-nav/furniture/furniture__link';
+@import './page-header/bottom-row/primary-nav/furniture/furniture__svg';
+@import './page-header/bottom-row/primary-nav/furniture/furniture__submenu';
+@import './page-header/bottom-row/primary-nav/furniture/furniture__sublink';
+
+@import './page-header/bottom-row/primary-nav/logo/logo';
+
+@import './page-header/bottom-row/order/order';
+@import './page-header/bottom-row/order/order__link';
+@import './page-header/bottom-row/order/order__cart';
+@import './page-header/bottom-row/order/order__desc';
 @import './shared/primary-btn';
 
-// || --------------- MAIN ---------------
-// || ----- Hero -----
+// --------------- MAIN ---------------
+// Hero
+@import './hero/hero';
 @import './hero/hero-wrapper';
 @import './hero/hero__title';
 @import './hero/hero__furniture-name';
 @import './hero/hero__desc';
 
-// || --------------- FOOTER ---------------
-@import './brand/brand__desc';
+// Hero - Slider
+@import './hero/slider/slide-control';
+@import './hero/slider/slide-control__count';
+@import './hero/slider/slide-control__btn';
+@import './hero/slider/slide-control__svg';
+
+// --------------- FOOTER ---------------
+@import './page-footer/brand/brand__desc';

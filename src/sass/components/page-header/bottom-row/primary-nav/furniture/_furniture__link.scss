@@ -1,0 +1,12 @@
+.furniture__link-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Дивани */
+.furniture__link {
+  margin-right: 3px;
+
+  @include fz(18px, 700, 1.25); /* 18 sp • H5 Headline */
+  text-transform: uppercase;
+}

@@ -1,0 +1,18 @@
+.hero {
+  @include mq($laptop) {
+    max-width: map-get($breakpoints, $desktop);
+    min-height: 785px;
+  }
+
+  padding-top: 0;
+  margin: 0 auto;
+
+  background-image: url('../src/images/hero-bg/hero-bg-1920.jpg');
+  background-image: url('../src/images/hero-bg/hero-bg-1920.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include bg-retina('../src/images/hero-bg/hero-bg-3840@2x.jpg');
+  @include bg-retina('../src/images/hero-bg/hero-bg-3840@2x.webp');
+}

@@ -1,0 +1,16 @@
+/* 01 */
+.count {
+  @include fz(null, 700, 1.25);
+  color: var(--color-text-primary); /* color4 */
+  text-align: center;
+}
+
+.slide-control__count--current {
+  font-size: 36px; /* 36 sp • H3 Headline */
+}
+
+/* / 04 */
+.slide-control__count--total {
+  font-size: 24px; /* 24sp • H4 Headline */
+  text-transform: uppercase;
+}

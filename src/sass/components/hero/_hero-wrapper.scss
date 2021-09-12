@@ -6,9 +6,6 @@
   max-width: 462px;
   padding: 99px 74px 101px 75px;
 
-  margin-right: auto;
-  margin-left: 51px;
-
   text-align: center;
 
   background: #ffffff;
@@ -26,5 +23,9 @@
     height: 100%;
 
     background: var(--color-accent); /* color3 */
+  }
+
+  &__primary-btn {
+    margin-bottom: 50px;
   }
 }

@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Test Task for Gloss Company for Work Acceptance">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Test Task for Gloss Company for Work Acceptance" />
 
     <title>Furniture</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="top-nav  page-header__top-nav">
+        <nav class="top-nav page-header__top-nav">
           <div class="social top-nav__social">
             <b class="social__title"> Ми в соціальних мережах: </b>
 
@@ -23,45 +29,48 @@
               <li class="social__item">
                 <a rel="noopener noreferrer nofollow" href="#">
                   <svg class="social__svg" width="40" height="40">
-                    <use href="./images/sprite.svg#telegram"></use>
+                    <use href="./src/images/sprite.svg#icon-telegram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a rel="noopener noreferrer nofollow" href="#">
                   <svg class="social__svg" width="40" height="40">
-                    <use href="./images/sprite.svg#facebook"></use>
+                    <use href="./src/images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a rel="noopener noreferrer nofollow" href="#">
                   <svg class="social__svg" width="40" height="40">
-                    <use href="./images/sprite.svg#instagram"></use>
+                    <use href="./src/images/sprite.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
           <div class="phones top-nav__phones">
-            <svg class="phones__svg" width="24" height="24">
-              <use href="./images/sprite.svg#smartphone"></use>
+            <svg class="phones__svg smartphone-icon" width="24" height="24">
+              <use href="./src/images/sprite.svg#icon-smartphone"></use>
             </svg>
 
             <ul class="phones__list">
               <li class="phones__item">
                 <a class="phones__link" href="tel:0991112233">(099) 111 22 33</a>
-              </li>
-              <li class="phones__item">
-                <a class="phones__link" href="tel:0981112233">(098) 111 22 33</a>
-              </li>
-              <li class="phones__item">
-                <a class="phones__link" href="tel:0971112233">(097) 111 22 33</a>
+
+                <ul class="phones__submenu">
+                  <li class="phones__subitem">
+                    <a class="phones__sublink" href="tel:0981112233">(098) 111 22 33</a>
+                  </li>
+                  <li class="phones__subitem">
+                    <a class="phones__sublink" href="tel:0971112233">(097) 111 22 33</a>
+                  </li>
+                </ul>
               </li>
             </ul>
 
-            <svg class="phones__svg" width="24" height="24">
-              <use href="./images/sprite.svg#chevron"></use>
+            <svg class="phones__svg chevron-big-icon" width="24" height="24">
+              <use href="./src/images/sprite.svg#icon-chevron"></use>
             </svg>
           </div>
 
@@ -93,10 +102,12 @@
             <div class="furniture">
               <ul class="furniture__list">
                 <li class="furniture__item">
-                  <a class="furniture__link" href="#">Дивани</a>
-                  <svg class="furniture__svg" width="40" height="40">
-                    <use href="./images/sprite.svg#chevron"></use>
-                  </svg>
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link" href="#">Дивани</a>
+                    <svg class="furniture__svg" width="20" height="20">
+                      <use href="./src/images/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
                       <a class="furniture__sublink" href="#">Дивани 1</a>
@@ -116,10 +127,12 @@
                   </ul>
                 </li>
                 <li class="furniture__item">
-                  <a class="furniture__link" href="#">Ліжка</a>
-                  <svg class="furniture__svg" width="40" height="40">
-                    <use href="./images/sprite.svg#chevron"></use>
-                  </svg>
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link" href="#">Ліжка</a>
+                    <svg class="furniture__svg" width="20" height="20">
+                      <use href="./src/images/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
                       <a class="furniture__sublink" href="#">Ліжка 1</a>
@@ -139,10 +152,12 @@
                   </ul>
                 </li>
                 <li class="furniture__item">
-                  <a class="furniture__link" href="#">Крісла</a>
-                  <svg class="furniture__svg" width="40" height="40">
-                    <use href="./images/sprite.svg#chevron"></use>
-                  </svg>
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link" href="#">Крісла</a>
+                    <svg class="furniture__svg" width="20" height="20">
+                      <use href="./src/images/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
                       <a class="furniture__sublink" href="#">Крісла 1</a>
@@ -162,10 +177,12 @@
                   </ul>
                 </li>
                 <li class="furniture__item">
-                  <a class="furniture__link" href="#">Комоди</a>
-                  <svg class="furniture__svg" width="40" height="40">
-                    <use href="./images/sprite.svg#chevron"></use>
-                  </svg>
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link" href="#">Комоди</a>
+                    <svg class="furniture__svg" width="20" height="20">
+                      <use href="./src/images/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
                       <a class="furniture__sublink" href="#">Комоди 1</a>
@@ -185,10 +202,12 @@
                   </ul>
                 </li>
                 <li class="furniture__item">
-                  <a class="furniture__link" href="#">Шафи</a>
-                  <svg class="furniture__svg" width="40" height="40">
-                    <use href="./images/sprite.svg#chevron"></use>
-                  </svg>
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link" href="#">Шафи</a>
+                    <svg class="furniture__svg" width="20" height="20">
+                      <use href="./src/images/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
                       <a class="furniture__sublink" href="#">Шафи 1</a>
@@ -208,10 +227,12 @@
                   </ul>
                 </li>
                 <li class="furniture__item">
-                  <a class="furniture__link" href="#">Кухня</a>
-                  <svg class="furniture__svg" width="40" height="40">
-                    <use href="./images/sprite.svg#chevron"></use>
-                  </svg>
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link" href="#">Кухня</a>
+                    <svg class="furniture__svg" width="20" height="20">
+                      <use href="./src/images/sprite.svg#icon-chevron"></use>
+                    </svg>
+                  </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
                       <a class="furniture__sublink" href="#">Кухня 1</a>
@@ -233,7 +254,7 @@
               </ul>
               <a class="logo" href="./">
                 <svg class="logo__svg" width="125" height="75">
-                  <use href="./images/sprite.svg#logo"></use>
+                  <use href="./src/images/sprite.svg#icon-logo-black"></use>
                 </svg>
                 <span class="logo__desc">Furniture.test</span>
               </a>
@@ -244,7 +265,7 @@
             <a class="order__link" href="#">
               <div class="order__cart">
                 <svg class="order__svg" width="30" height="30">
-                  <use href="./sprite.svg#cart"></use>
+                  <use href="./src/images/sprite.svg#icon-cart"></use>
                 </svg>
                 <span class="order__desc">Кошик</span>
               </div>
@@ -258,19 +279,46 @@
     </header>
     <main>
       <section class="section hero">
-        hero-bg
-
         <div class="container">
           <div class="hero-wrapper">
             <h1 class="hero__title title-h1">Новинка!</h1>
 
             <h2 class="hero__furniture-name">Ліжко <span lang="en">Ornella</span></h2>
             <p class="hero__desc">
-              Це новий рівень <br>
+              Це новий рівень <br />
               комфортного сну
             </p>
 
-            <button class="primary-btn"><span class="primary-btn__desc">Детальніше</span></button>
+            <button class="primary-btn hero-wrapper__primary-btn">
+              <span class="primary-btn__desc">Детальніше</span>
+            </button>
+
+            <div class="slide-control">
+              <span class="count slide-control__count--current">01</span>
+              <span class="count slide-control__count--total">/ 04</span>
+            </div>
+
+            <div class="slide-control__btn-wrapper">
+              <button
+                class="back-btn slide-control__btn"
+                type="button"
+                aria-label="Попередній слайд"
+              >
+                <svg class="slide-control__svg slide-control__back-icon" width="30" height="30">
+                  <use href="./src/images/sprite.svg#icon-left"></use>
+                </svg>
+              </button>
+
+              <button
+                class="next-btn slide-control__btn"
+                type="button"
+                aria-label="Наступний слайд"
+              >
+                <svg class="slide-control__svg slide-control__next-icon" width="30" height="30">
+                  <use href="./src/images/sprite.svg#icon-right"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -305,7 +353,7 @@
 
         <div class="brand">
           <svg class="brand__logo" width="20" height="21">
-            <use href="./images/sprite.svg#brand_logo"></use>
+            <use href="./src/images/sprite.svg#icon-brand-gloss"></use>
           </svg>
 
           <p class="brand__desc">Глянець — розробка інтернет-магазинів</p>

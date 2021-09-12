@@ -1,5 +1,5 @@
 .social {
-  @include mq($laptop) {
+  @include mq($laptop, $mr: 50px) {
     display: flex;
     align-items: center;
   }

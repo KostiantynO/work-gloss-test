@@ -1,9 +1,0 @@
-.furniture__list {
-  @include mq($laptop) {
-    display: flex;
-  }
-}
-
-.furniture__item {
-  position: relative;
-}
