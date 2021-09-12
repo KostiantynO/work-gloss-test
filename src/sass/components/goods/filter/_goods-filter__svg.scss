@@ -1,3 +1,13 @@
 .goods-filter__svg {
   margin-bottom: 10px;
+
+  fill: currentColor;
+
+  transition-property: fill;
+  @include transition;
+
+  .goods-filter__btn:focus &,
+  .goods-filter__btn:hover & {
+    fill: var(--color-accent);
+  }
 }

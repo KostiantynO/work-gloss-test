@@ -1,0 +1,19 @@
+/* Rectangle 174 */
+.consultancy__background {
+  position: relative;
+  top: 0;
+  right: 51px;
+
+  min-width: 1561px;
+  min-height: 675px;
+
+  background-color: var(--color-text-primary);
+  background-image: url('../src/images/about-us/about-us.jpg');
+  background-image: url('../src/images/about-us/about-us.webp');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+
+  @include bg-retina('../src/images/about-us/about-us@2x.jpg');
+  @include bg-retina('../src/images/about-us/about-us@2x.webp');
+}

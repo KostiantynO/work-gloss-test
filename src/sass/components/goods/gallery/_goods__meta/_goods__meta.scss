@@ -6,4 +6,7 @@
     flex-wrap: wrap;
     align-items: baseline;
   }
+
+  transition-property: color, background-color;
+  @include transition;
 }

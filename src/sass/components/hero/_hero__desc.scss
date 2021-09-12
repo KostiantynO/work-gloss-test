@@ -1,3 +1,7 @@
+/* Це новий рівень комфортного сну */
 .hero__desc {
   @include mq($mobile, $mb: 30px);
+
+  font-size: 36px; /* lh: 45px */
+  text-align: center;
 }

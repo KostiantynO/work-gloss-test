@@ -139,7 +139,7 @@ body {
 }
 
 /* Новинка! */
-.hero-title {
+.hero__title {
   font-size: 64px;
   font-weight: 700;
   line-height: 1;
@@ -151,10 +151,10 @@ body {
 /* Категорії товарів */
 .section__title {
   margin-bottom: 50px;
-  font-size: 48px;
+  /* Montserrat - fs: 44px, lh:1.36; Proxima Nova - 48 sp • H2 Headline, 60 px*/
+  font-size: 44px;
   font-weight: 700;
-  line-height: 1.25;
-  /* 48 sp • H2 Headline, 60 px*/
+  line-height: 1.36;
   color: var(--color-text-primary);
   /* color4 */
   transform: translateX(50%);
@@ -163,10 +163,24 @@ body {
 }
 
 .section__title-text {
+  position: relative;
   display: inline-block;
   transform: translateX(-50%);
   transition-property: transform;
   transition: var(--time) var(--cubic);
+  /* Rectangle 165 */
+}
+
+.section__title-text::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: -5px;
+  z-index: -1;
+  width: 20px;
+  background: var(--color-accent);
+  /* color3 */
 }
 
 @media screen and (min-width: 320px) {
@@ -194,6 +208,7 @@ body {
 .page-header {
   padding-top: 10px;
   padding-bottom: 15px;
+  font-weight: 700;
 }
 
 .top-nav__phones {
@@ -344,9 +359,6 @@ body {
 /* Дивани */
 .furniture__link {
   margin-right: 3px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.25;
   /* 18 sp • H5 Headline */
   text-transform: uppercase;
 }
@@ -431,6 +443,8 @@ body {
   /* color3 */
   border-radius: 3px;
   border: none;
+  transition-property: transform, background-color;
+  transition: var(--time) var(--cubic);
   /* Замовити дзвінок */
 }
 
@@ -503,10 +517,25 @@ body {
   }
 }
 
+/* Ліжко Ornella */
+.hero__furniture-name {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+  /* 36 sp • H3 Headline, lh: 45px */
+}
+
 @media screen and (min-width: 320px) {
   .hero__furniture-name {
     margin-bottom: 10px;
   }
+}
+
+/* Це новий рівень комфортного сну */
+.hero__desc {
+  font-size: 36px;
+  /* lh: 45px */
+  text-align: center;
 }
 
 @media screen and (min-width: 320px) {
@@ -665,8 +694,20 @@ body {
   transform: scaleX(100%);
 }
 
+.goods-filter__btn--current {
+  color: var(--color-accent);
+}
+
 .goods-filter__svg {
   margin-bottom: 10px;
+  fill: currentColor;
+  transition-property: fill;
+  transition: var(--time) var(--cubic);
+}
+
+.goods-filter__btn:focus .goods-filter__svg,
+.goods-filter__btn:hover .goods-filter__svg {
+  fill: var(--color-accent);
 }
 
 /* Дивани */
@@ -710,6 +751,23 @@ body {
 
 .goods__link {
   position: relative;
+  transition-property: transform;
+  transition: var(--time) var(--cubic);
+}
+
+.goods__link:focus, .goods__link:hover {
+  transform: translateY(-25px);
+}
+
+.goods__link:focus .goods__meta,
+.goods__link:hover .goods__meta {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+
+.goods__link:focus .goods__price,
+.goods__link:hover .goods__price {
+  color: var(--color-white);
 }
 
 .goods__marker {
@@ -741,6 +799,8 @@ body {
 
 .goods__meta {
   padding: 15px;
+  transition-property: color, background-color;
+  transition: var(--time) var(--cubic);
 }
 
 @media screen and (min-width: 320px) {
@@ -772,6 +832,8 @@ body {
   /* color4 */
   text-align: center;
   text-transform: uppercase;
+  transition-property: color;
+  transition: var(--time) var(--cubic);
 }
 
 .goods__price--current {
@@ -798,11 +860,6 @@ body {
 .goods__catalog-btn {
   transition-property: transform;
   transition: var(--time) var(--cubic);
-}
-
-.about-us__container {
-  min-width: 1407px;
-  min-height: 675px;
 }
 
 .about-us__content {
@@ -870,6 +927,145 @@ body {
   color: var(--color-accent);
   /* color3 */
   text-transform: uppercase;
+}
+
+/* Rectangle 175 */
+.consultancy__content {
+  position: relative;
+  display: flex;
+}
+
+/* Rectangle 174 */
+.consultancy__background {
+  position: relative;
+  top: 0;
+  right: 51px;
+  min-width: 1561px;
+  min-height: 675px;
+  background-color: var(--color-text-primary);
+  background-image: url("../src/images/about-us/about-us.jpg");
+  background-image: url("../src/images/about-us/about-us.webp");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .consultancy__background {
+    background-image: url("../src/images/about-us/about-us@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .consultancy__background {
+    background-image: url("../src/images/about-us/about-us@2x.webp");
+  }
+}
+
+.consultancy__text-wrapper {
+  position: absolute;
+  inset: 0;
+  left: unset;
+  width: 462px;
+  height: 457px;
+  padding: 50px 0 50px 30px;
+  margin: auto 0;
+  background-color: var(--color-white);
+}
+
+.consultancy__text-wrapper::before {
+  /* Rectangle 176 */
+  content: '';
+  position: absolute;
+  right: 100%;
+  top: 0;
+  width: 15px;
+  height: 100%;
+  background: var(--color-accent);
+  /* color3 */
+  border-radius: 3px 0 0 3px;
+}
+
+/* Замовте консультацію */
+.consultancy__heading {
+  margin-bottom: 30px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.25;
+  /* 36 sp • H3 Headline  lh: 45px */
+  color: var(--color-text-primary);
+  /* color4 */
+}
+
+.consultancy__text {
+  width: 395px;
+}
+
+.consultancy__group {
+  margin-bottom: 15px;
+}
+
+.consultancy__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.consultancy__label:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.consultancy__label-text {
+  padding: 14px 15px;
+  position: absolute;
+  transition-property: transform, color;
+  transition: var(--time) var(--cubic);
+}
+
+.consultancy__input:focus + .consultancy__label-text,
+.consultancy__input:not(:placeholder-shown) + .consultancy__label-text {
+  font-size: 12px;
+  transform: translate(-5px, calc(-68%));
+}
+
+.consultancy__input:focus + .consultancy__label-text {
+  color: var(--color-accent);
+}
+
+/* Rectangle 176 */
+.consultancy__input {
+  min-height: 51px;
+  padding: 14px 15px;
+  color: var(--color-text-primary);
+  background: var(--color-white);
+  border: 1px solid var(--color-text-primary);
+  border-radius: 3px;
+  /* Віталій */
+}
+
+.consultancy__input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  /* 22px */
+  height: 23px;
+  opacity: 0.6;
+  /* color4 */
+  transition-property: opacity;
+  transition: var(--time) var(--cubic);
+}
+
+.consultancy__input:focus::placeholder {
+  opacity: 0;
+}
+
+.consultancy__btn-wrapper {
+  margin-bottom: 30px;
+  transform: translateX(50%);
+}
+
+.consultancy__submit-btn {
+  transform: translateX(-50%);
 }
 
 .brand__desc {

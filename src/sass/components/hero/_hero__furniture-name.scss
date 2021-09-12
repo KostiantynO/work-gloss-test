@@ -1,3 +1,6 @@
+/* Ліжко Ornella */
 .hero__furniture-name {
   @include mq($mobile, $mb: 10px);
+
+  @include fz(36px, 700, 1.25); /* 36 sp • H3 Headline, lh: 45px */
 }

@@ -1,5 +1,5 @@
 /* Новинка! */
-.hero-title {
+.hero__title {
   @include fz(64px, 700, 1); /* 64 sp • H1 Headline */
   color: var(--color-text-primary);
 }
@@ -11,8 +11,8 @@
 /* Категорії товарів */
 .section__title {
   margin-bottom: 50px;
-  @include fz(48px, 700, 1.25); /* 48 sp • H2 Headline, 60 px*/
-
+  /* Montserrat - fs: 44px, lh:1.36; Proxima Nova - 48 sp • H2 Headline, 60 px*/
+  @include fz(44px, 700, 1.36);
   color: var(--color-text-primary); /* color4 */
 
   transform: translateX(50%);
@@ -20,9 +20,24 @@
   @include transition;
 
   &-text {
+    position: relative;
+
     display: inline-block;
     transform: translateX(-50%);
     transition-property: transform;
     @include transition;
+
+    /* Rectangle 165 */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      left: -5px;
+      z-index: -1;
+
+      width: 20px;
+      background: var(--color-accent); /* color3 */
+    }
   }
 }

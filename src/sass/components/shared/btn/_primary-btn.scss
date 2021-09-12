@@ -20,6 +20,9 @@
   border-radius: 3px;
   border: none;
 
+  transition-property: transform, background-color;
+  @include transition;
+
   &:focus,
   &:hover {
     background-color: darken(#44c697, 5);

@@ -5,6 +5,9 @@
   text-align: center;
   text-transform: uppercase;
 
+  transition-property: color;
+  @include transition;
+
   &--current {
     margin-right: 10px;
     color: var(--color-discount);

@@ -30,4 +30,8 @@
   &.goods-filter__btn--current::after {
     transform: scaleX(100%);
   }
+
+  &--current {
+    color: var(--color-accent);
+  }
 }

@@ -77,9 +77,18 @@
 
 // About us
 @import './about-us/about-us';
+@import './about-us/about-us__background';
 @import './about-us/about-us__text';
 
 // Still have questions?
+@import './consultancy/consultancy';
+@import './consultancy/consultancy__background';
+@import './consultancy/consultancy__text';
+@import './consultancy/consultancy__form/consultancy__form';
+@import './consultancy/consultancy__form/consultancy__group';
+@import './consultancy/consultancy__form/consultancy__label';
+@import './consultancy/consultancy__form/consultancy__input';
+@import './consultancy/consultancy__form/consultancy__submit-btn';
 
 // --------------- FOOTER ---------------
 @import './page-footer/brand/brand__desc';

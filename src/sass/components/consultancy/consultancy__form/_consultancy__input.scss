@@ -1,0 +1,27 @@
+/* Rectangle 176 */
+.consultancy__input {
+  min-height: 51px;
+
+  padding: 14px 15px;
+
+  color: var(--color-text-primary);
+  background: var(--color-white);
+  border: 1px solid var(--color-text-primary);
+  border-radius: 3px;
+
+  /* Віталій */
+  &::placeholder {
+    @include fz(16px, 400, 1.25); /* 22px */
+    height: 23px;
+    opacity: 0.6; /* color4 */
+
+    transition-property: opacity;
+    @include transition;
+  }
+
+  // &:not(:placeholder-shown)
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}

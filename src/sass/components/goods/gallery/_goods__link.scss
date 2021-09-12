@@ -1,3 +1,22 @@
 .goods__link {
   position: relative;
+
+  transition-property: transform;
+  @include transition;
+
+  &:focus,
+  &:hover {
+    transform: translateY(-25px);
+  }
+
+  &:focus .goods__meta,
+  &:hover .goods__meta {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+  }
+
+  &:focus .goods__price,
+  &:hover .goods__price {
+    color: var(--color-white);
+  }
 }
