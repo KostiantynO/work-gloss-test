@@ -1,6 +1,8 @@
 .logo {
-  display: flex;
-  align-items: center;
+  @include mq($mobile) {
+    display: flex;
+    align-items: center;
+  }
 
   /* Furniture.test */ /* 36 sp • H3 Headline */
   @include fz(36px, 700, 1.25);
@@ -8,4 +10,8 @@
   &__desc::first-letter {
     color: var(--color-accent); /* color3 */
   }
+}
+
+.logo__svg {
+  margin-right: 15px;
 }

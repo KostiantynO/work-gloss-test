@@ -1,11 +1,14 @@
+.main__hero {
+  margin: 0 auto;
+}
+
 .hero {
-  @include mq($laptop) {
+  @include mq($mobile) {
     max-width: map-get($breakpoints, $desktop);
     min-height: 785px;
   }
 
   padding-top: 0;
-  margin: 0 auto;
 
   background-image: url('../src/images/hero-bg/hero-bg-1920.jpg');
   background-image: url('../src/images/hero-bg/hero-bg-1920.webp');

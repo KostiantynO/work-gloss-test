@@ -1,7 +1,10 @@
 .order__cart {
-  display: flex;
-  align-items: center;
+  @include mq($mobile) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .order__svg {
+  margin-right: 5px;
 }

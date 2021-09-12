@@ -1,5 +1,5 @@
 .furniture__list {
-  @include mq($laptop, $mr: 115px) {
+  @include mq($mobile, $mr: 115px) {
     display: flex;
     align-items: center;
   }

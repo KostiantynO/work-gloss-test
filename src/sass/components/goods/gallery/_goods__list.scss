@@ -1,0 +1,12 @@
+.goods__list {
+  @include mq($mobile, $mt: -50px, $ml: -30px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.goods__item {
+  @include mq($mobile, $mt: 50px, $ml: 30px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}

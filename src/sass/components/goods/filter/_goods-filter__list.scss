@@ -1,13 +1,11 @@
 .goods-filter__list {
   @include mq($mobile, $mt: -20px, $ml: -20px) {
-    flex-basis: calc(100% / 2 - 20px);
-  }
-  outline: 1px dotted brown;
-  @include mq($laptop, $mr: 0) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  @include mq($laptop, $mr: 0);
 }
 
 .goods-filter__item {
@@ -15,7 +13,6 @@
   //   @include margins($ml: auto, $mr: auto, $mb: 20px);
   // }
 
-  outline: 1px double blue;
   max-width: fit-content;
 
   @include mq($mobile, $mt: 20px, $ml: 20px, $mb: 0) {

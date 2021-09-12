@@ -1,10 +1,10 @@
 .top-nav__list {
-  @include mq($laptop) {
+  @include mq($mobile) {
     display: flex;
     align-items: center;
   }
 }
 
 .top-nav__item:not(:last-child) {
-  @include mq($laptop, $mr: 15px);
+  @include mq($mobile, $mr: 15px);
 }

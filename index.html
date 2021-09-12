@@ -50,7 +50,7 @@
             </ul>
           </div>
           <div class="phones top-nav__phones">
-            <svg class="phones__svg smartphone-icon" width="24" height="24">
+            <svg class="phones__svg phones__smartphone-icon" width="24" height="24">
               <use href="./src/images/sprite.svg#icon-smartphone"></use>
             </svg>
 
@@ -69,7 +69,7 @@
               </li>
             </ul>
 
-            <svg class="phones__svg chevron-big-icon" width="24" height="24">
+            <svg class="phones__svg phones__chevron-big-icon" width="24" height="24">
               <use href="./src/images/sprite.svg#icon-chevron"></use>
             </svg>
           </div>
@@ -98,7 +98,7 @@
         </nav>
 
         <div class="bottom-row page-header__bottom-row">
-          <nav class="primary-nav">
+          <nav class="primary-nav page-header__primary-nav">
             <div class="furniture">
               <ul class="furniture__list">
                 <li class="furniture__item">
@@ -278,7 +278,7 @@
       </div>
     </header>
     <main>
-      <section class="section hero">
+      <section class="section hero main__hero">
         <div class="container">
           <div class="hero-wrapper">
             <h1 class="hero__title title-h1">Новинка!</h1>
@@ -293,14 +293,14 @@
               <span class="primary-btn__desc">Детальніше</span>
             </button>
 
-            <div class="slide-control">
+            <div class="slide-control hero-wrapper__slide-control">
               <span class="count slide-control__count--current">01</span>
               <span class="count slide-control__count--total">/ 04</span>
             </div>
 
             <div class="slide-control__btn-wrapper">
               <button
-                class="back-btn slide-control__btn"
+                class="back-btn slide-control__back-btn"
                 type="button"
                 aria-label="Попередній слайд"
               >
@@ -310,7 +310,7 @@
               </button>
 
               <button
-                class="next-btn slide-control__btn"
+                class="next-btn slide-control__next-btn"
                 type="button"
                 aria-label="Наступний слайд"
               >
@@ -572,28 +572,107 @@
             <ul class="goods__list">
               <li class="goods__item">
                 <a class="goods__link" href="#">
-                  <b class="goods__marker goods__marker--new">Новинка</b>
-                  <b class="goods__marker goods__marker--discount is-hidden">Акція</b>
+                  <p class="goods__marker goods__marker--new">Новинка</p>
 
                   <div class="goods__thumb">
                     <picture>
                       <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
-                      <img
-                        class="goods__image"
-                        src="./src/images/"
-                        alt="Велике спальне ліжко на двi персони"
-                      />
+                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
                     </picture>
                   </div>
 
                   <h4 class="goods__name">Ліжко Рамона</h4>
                   <h4 class="goods__price">8 999 грн</h4>
-                  <h4 class="goods__price goods__price--current is-hidden">8 999 грн</h4>
-                  <h4 class="goods__price goods__price--discounted is-hidden">8 999 грн</h4>
+                </a>
+              </li>
+
+              <li class="goods__item">
+                <a class="goods__link" href="#">
+                  <p class="goods__marker goods__marker--new">Хiт продаж</p>
+
+                  <p class="goods__marker goods__marker--discount">Акція</p>
+
+                  <div class="goods__thumb">
+                    <picture>
+                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
+                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                    </picture>
+                  </div>
+
+                  <h4 class="goods__name">Ліжко Честер</h4>
+                  <h4 class="goods__price goods__price--current">8 999 грн</h4>
+                  <h4 class="goods__price goods__price--discounted">8 999 грн</h4>
+                </a>
+              </li>
+
+              <li class="goods__item">
+                <a class="goods__link" href="#">
+                  <div class="goods__thumb">
+                    <picture>
+                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
+                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                    </picture>
+                  </div>
+
+                  <h4 class="goods__name">Ліжко Венеція люкс</h4>
+                  <h4 class="goods__price">8 999 грн</h4>
+                </a>
+              </li>
+
+              <li class="goods__item">
+                <a class="goods__link" href="#">
+                  <p class="goods__marker goods__marker--new">Новинка</p>
+
+                  <div class="goods__thumb">
+                    <picture>
+                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
+                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                    </picture>
+                  </div>
+
+                  <h4 class="goods__name">Ліжко Імперія</h4>
+                  <h4 class="goods__price">8 999 грн</h4>
+                </a>
+              </li>
+
+              <li class="goods__item">
+                <a class="goods__link" href="#">
+                  <div class="goods__thumb">
+                    <picture>
+                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
+                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                    </picture>
+                  </div>
+
+                  <h4 class="goods__name">Ліжко Адель</h4>
+                  <h4 class="goods__price">8 999 грн</h4>
+                </a>
+              </li>
+
+              <li class="goods__item">
+                <a class="goods__link" href="#">
+                  <p class="goods__marker goods__marker--new">Хiт продаж</p>
+
+                  <p class="goods__marker goods__marker--discount">Акція</p>
+
+                  <div class="goods__thumb">
+                    <picture>
+                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
+                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                    </picture>
+                  </div>
+
+                  <h4 class="goods__name">Ліжко Атлант</h4>
+                  <h4 class="goods__price goods__price--current">8 999 грн</h4>
+                  <h4 class="goods__price goods__price--discounted">8 999 грн</h4>
                 </a>
               </li>
             </ul>
           </div>
+
+          <button class="primary-btn goods__catalog-btn">
+            <span class="primary-btn__desc">В каталог</span>
+          </button>
         </div>
       </section>
       <section class="section">

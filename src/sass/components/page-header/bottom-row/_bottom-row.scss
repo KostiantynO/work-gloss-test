@@ -1,3 +1,5 @@
 .bottom-row {
-  display: flex;
+  @include mq($mobile) {
+    display: flex;
+  }
 }

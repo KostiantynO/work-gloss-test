@@ -1,12 +1,12 @@
 .advantages__list {
   position: relative;
-  @include mq($laptop, $mt: -30px, $ml: -30px) {
+  @include mq($mobile, $mt: -30px, $ml: -30px) {
     display: flex;
   }
 }
 
 .advantages__item {
-  @include mq($laptop, $mt: 30px, $ml: 30px) {
+  @include mq($mobile, $mt: 30px, $ml: 30px) {
     flex-basis: calc(100% / 3 - 30px);
   }
 

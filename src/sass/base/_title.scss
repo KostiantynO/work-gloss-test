@@ -6,7 +6,7 @@
 
 /* Ліжко Ornella */
 .section__title {
-  @include mq($laptop, $mb: 50px) {
+  @include mq($mobile, $mb: 50px) {
     @include fz(36px, 700, 1.25); /* 36 sp • H3 Headline */
   }
 

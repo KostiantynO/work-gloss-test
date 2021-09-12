@@ -22,3 +22,7 @@ a {
 img {
   @extend %img;
 }
+
+button {
+  cursor: pointer;
+}

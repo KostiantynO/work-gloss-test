@@ -34,7 +34,7 @@
 @import './page-header/bottom-row/order/order__link';
 @import './page-header/bottom-row/order/order__cart';
 @import './page-header/bottom-row/order/order__desc';
-@import './shared/primary-btn';
+@import './shared/btn/primary-btn';
 
 // --------------- MAIN ---------------
 // Hero
@@ -47,6 +47,7 @@
 // Hero - Slider
 @import './hero/slider/slide-control';
 @import './hero/slider/slide-control__count';
+@import './shared/btn/next-btn';
 @import './hero/slider/slide-control__btn';
 @import './hero/slider/slide-control__svg';
 
@@ -60,6 +61,7 @@
 @import './goods/filter/goods-filter__list';
 // Goods - Gallery
 @import './goods/gallery/goods__gallery';
+@import './goods/gallery/goods__list';
 
 // About us
 

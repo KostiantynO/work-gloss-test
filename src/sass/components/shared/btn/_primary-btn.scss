@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
 
-  min-width: 278px;
   max-width: 500px;
   max-height: 51px;
 
@@ -12,7 +11,7 @@
 
   font-family: inherit; /* 18 sp • H5 Headline */
   color: var(--white);
-  @include fz(18px, 700, 1.25);
+  @include fz(16px, 700, 1.25);
   text-overflow: ellipsis;
   text-transform: uppercase;
   word-wrap: break-word;
