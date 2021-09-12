@@ -1,0 +1,33 @@
+.about-us {
+}
+
+.about-us__container {
+  min-width: 1407px;
+  min-height: 675px;
+}
+
+.about-us__content {
+  position: relative;
+  display: flex;
+}
+
+/* Rectangle 174 */
+.about-us__background {
+  position: relative;
+  top: 0;
+  left: 51px;
+
+  width: 1407px;
+  height: 675px;
+  margin-left: auto;
+
+  background-color: var(--color-text-primary);
+  background-image: url('../src/images/about-us/about-us.jpg');
+  background-image: url('../src/images/about-us/about-us.webp');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+
+  @include bg-retina('../src/images/about-us/about-us@2x.jpg');
+  @include bg-retina('../src/images/about-us/about-us@2x.webp');
+}

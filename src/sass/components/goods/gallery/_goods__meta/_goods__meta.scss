@@ -1,0 +1,9 @@
+.goods__meta {
+  padding: 15px;
+
+  @include mq($mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}

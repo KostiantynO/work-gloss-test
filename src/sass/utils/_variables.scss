@@ -4,12 +4,18 @@
 
   --color-text-primary: #1e2e36;
   --color-accent: #44c697;
+  --color-white: #ffffff;
+  --color-discount: #ff1b1b;
+  --color-old-price: #bcbdbb;
+
   --color-brand: #ffd001;
-  --white: #ffffff;
 
   // Transitions
   --time: 250ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+$fs-montserrat: 18px;
+$fs-proxima-nova: 18px;
 
 $precision: (10 * 3);

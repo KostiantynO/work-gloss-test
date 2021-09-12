@@ -10,15 +10,15 @@
   padding: 14px 46px;
 
   font-family: inherit; /* 18 sp • H5 Headline */
-  color: var(--white);
-  @include fz(16px, 700, 1.25);
+  color: var(--color-white);
+  @include fz($fs-montserrat, 700, 1.25);
   text-overflow: ellipsis;
   text-transform: uppercase;
   word-wrap: break-word;
 
   background-color: var(--color-accent); /* color3 */
   border-radius: 3px;
-  border: 1px solid transparent;
+  border: none;
 
   &:focus,
   &:hover {

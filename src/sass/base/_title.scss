@@ -5,11 +5,24 @@
 }
 
 /* Ліжко Ornella */
-.section__title {
-  @include mq($mobile, $mb: 50px) {
-    @include fz(36px, 700, 1.25); /* 36 sp • H3 Headline */
-  }
+.goods__name {
+}
 
-  text-align: center;
-  color: var(--color-text-primary);
+/* Категорії товарів */
+.section__title {
+  margin-bottom: 50px;
+  @include fz(48px, 700, 1.25); /* 48 sp • H2 Headline, 60 px*/
+
+  color: var(--color-text-primary); /* color4 */
+
+  transform: translateX(50%);
+  transition-property: transform;
+  @include transition;
+
+  &-text {
+    display: inline-block;
+    transform: translateX(-50%);
+    transition-property: transform;
+    @include transition;
+  }
 }

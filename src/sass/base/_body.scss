@@ -1,5 +1,8 @@
 body {
   font-family: var(--body-sans-serif);
-  @include fz(18px, 700, 1.25);
+  // Montserrat (free)   fs: 16px, lh: 1.40625  equal to
+  // Proxima Nova (paid) fs: 18px, lh: 1.25
+  @include fz($fs-montserrat, null, 1.25, -1.1px);
+
   color: var(--color-text-primary);
 }

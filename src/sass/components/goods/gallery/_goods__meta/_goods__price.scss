@@ -1,0 +1,18 @@
+/* 8 999 грн (Normal price) */
+.goods__price {
+  @include fz(24px, 700, 1.25); /* 24sp • H4 Headline, lh: 30px */
+  color: var(--color-text-primary); /* color4 */
+  text-align: center;
+  text-transform: uppercase;
+
+  &--current {
+    margin-right: 10px;
+    color: var(--color-discount);
+  }
+
+  &--previous {
+    text-decoration-line: line-through;
+    font-size: 18px;
+    color: var(--color-old-price); /* color2 */
+  }
+}

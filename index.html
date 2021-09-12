@@ -324,7 +324,7 @@
       </section>
       <section class="section advantages">
         <div class="container">
-          <h2 class="section__title">Наші переваги</h2>
+          <h2 class="section__title"><span class="section__title-text">Наші переваги</span></h2>
 
           <div class="advantages__gallery">
             <ul class="advantages__list">
@@ -502,7 +502,7 @@
       </section>
       <section class="section goods">
         <div class="container">
-          <h2 class="section__title">Категорії товарів</h2>
+          <h2 class="section__title"><span class="section__title-text">Категорії товарів</span></h2>
 
           <div class="goods-filter">
             <ul class="goods-filter__list">
@@ -517,7 +517,7 @@
               </li>
 
               <li class="goods-filter__item">
-                <button class="goods-filter__btn" type="button">
+                <button class="goods-filter__btn goods-filter__btn--current" type="button">
                   <svg class="goods-filter__svg" width="100" height="100">
                     <use href="./src/images/sprite.svg#icon-bedroom"></use>
                   </svg>
@@ -576,13 +576,29 @@
 
                   <div class="goods__thumb">
                     <picture>
-                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
-                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./src/images/goods/goods-1.webp,
+                          ./src/images/goods/goods-1@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="goods__image"
+                        srcset="
+                          ./src/images/goods/goods-1.jpg,
+                          ./src/images/goods/goods-1@2x.jpg 2x
+                        "
+                        src="./src/images/goods/goods-1.jpg"
+                        alt="Велике двоспальне ліжко на тонких фігурних ніжках"
+                      />
                     </picture>
                   </div>
 
-                  <h4 class="goods__name">Ліжко Рамона</h4>
-                  <h4 class="goods__price">8 999 грн</h4>
+                  <div class="goods__meta">
+                    <h4 class="goods__name">Ліжко Рамона</h4>
+                    <h4 class="goods__price">8 999 грн</h4>
+                  </div>
                 </a>
               </li>
 
@@ -594,14 +610,30 @@
 
                   <div class="goods__thumb">
                     <picture>
-                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
-                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./src/images/goods/goods-2.webp,
+                          ./src/images/goods/goods-2@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="goods__image"
+                        srcset="
+                          ./src/images/goods/goods-2.jpg,
+                          ./src/images/goods/goods-2@2x.jpg 2x
+                        "
+                        src="./src/images/goods/goods-2.jpg"
+                        alt="Велике двоспальне ліжко на вузьких прямокутних ніжках"
+                      />
                     </picture>
                   </div>
 
-                  <h4 class="goods__name">Ліжко Честер</h4>
-                  <h4 class="goods__price goods__price--current">8 999 грн</h4>
-                  <h4 class="goods__price goods__price--discounted">8 999 грн</h4>
+                  <div class="goods__meta">
+                    <h4 class="goods__name">Ліжко Честер</h4>
+                    <h4 class="goods__price goods__price--current">8 999 грн</h4>
+                    <h4 class="goods__price goods__price--previous">8 999 грн</h4>
+                  </div>
                 </a>
               </li>
 
@@ -609,13 +641,29 @@
                 <a class="goods__link" href="#">
                   <div class="goods__thumb">
                     <picture>
-                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
-                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./src/images/goods/goods-3.webp,
+                          ./src/images/goods/goods-3@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="goods__image"
+                        srcset="
+                          ./src/images/goods/goods-3.jpg,
+                          ./src/images/goods/goods-3@2x.jpg 2x
+                        "
+                        src="./src/images/goods/goods-3.jpg"
+                        alt="Велике двоспальне ліжко"
+                      />
                     </picture>
                   </div>
 
-                  <h4 class="goods__name">Ліжко Венеція люкс</h4>
-                  <h4 class="goods__price">8 999 грн</h4>
+                  <div class="goods__meta">
+                    <h4 class="goods__name">Ліжко Венеція люкс</h4>
+                    <h4 class="goods__price">8 999 грн</h4>
+                  </div>
                 </a>
               </li>
 
@@ -625,13 +673,29 @@
 
                   <div class="goods__thumb">
                     <picture>
-                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
-                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./src/images/goods/goods-4.webp,
+                          ./src/images/goods/goods-4@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="goods__image"
+                        srcset="
+                          ./src/images/goods/goods-4.jpg,
+                          ./src/images/goods/goods-4@2x.jpg 2x
+                        "
+                        src="./src/images/goods/goods-4.jpg"
+                        alt="Велике двоспальне ліжко"
+                      />
                     </picture>
                   </div>
 
-                  <h4 class="goods__name">Ліжко Імперія</h4>
-                  <h4 class="goods__price">8 999 грн</h4>
+                  <div class="goods__meta">
+                    <h4 class="goods__name">Ліжко Імперія</h4>
+                    <h4 class="goods__price">8 999 грн</h4>
+                  </div>
                 </a>
               </li>
 
@@ -639,13 +703,29 @@
                 <a class="goods__link" href="#">
                   <div class="goods__thumb">
                     <picture>
-                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
-                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./src/images/goods/goods-5.webp,
+                          ./src/images/goods/goods-5@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="goods__image"
+                        srcset="
+                          ./src/images/goods/goods-5.jpg,
+                          ./src/images/goods/goods-5@2x.jpg 2x
+                        "
+                        src="./src/images/goods/goods-5.jpg"
+                        alt="Велике двоспальне ліжко"
+                      />
                     </picture>
                   </div>
 
-                  <h4 class="goods__name">Ліжко Адель</h4>
-                  <h4 class="goods__price">8 999 грн</h4>
+                  <div class="goods__meta">
+                    <h4 class="goods__name">Ліжко Адель</h4>
+                    <h4 class="goods__price">8 999 грн</h4>
+                  </div>
                 </a>
               </li>
 
@@ -657,33 +737,85 @@
 
                   <div class="goods__thumb">
                     <picture>
-                      <source type="image/webp" srcset="./src/images/, ./src/images/ 2x" />
-                      <img class="goods__image" src="./src/images/" alt="Велике двоспальне ліжко" />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./src/images/goods/goods-6.webp,
+                          ./src/images/goods/goods-6@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="goods__image"
+                        srcset="
+                          ./src/images/goods/goods-6.jpg,
+                          ./src/images/goods/goods-6@2x.jpg 2x
+                        "
+                        src="./src/images/goods/goods-6.jpg"
+                        alt="Велике двоспальне ліжко"
+                      />
                     </picture>
                   </div>
 
-                  <h4 class="goods__name">Ліжко Атлант</h4>
-                  <h4 class="goods__price goods__price--current">8 999 грн</h4>
-                  <h4 class="goods__price goods__price--discounted">8 999 грн</h4>
+                  <div class="goods__meta">
+                    <h4 class="goods__name">Ліжко Атлант</h4>
+                    <h4 class="goods__price goods__price--current">8 999 грн</h4>
+                    <h4 class="goods__price goods__price--previous">8 999 грн</h4>
+                  </div>
                 </a>
               </li>
             </ul>
           </div>
 
-          <button class="primary-btn goods__catalog-btn">
-            <span class="primary-btn__desc">В каталог</span>
-          </button>
+          <div class="goods__btn-wrapper">
+            <button class="primary-btn goods__catalog-btn">
+              <span class="primary-btn__desc">В каталог</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section about-us">
+        <div class="container about-us__container">
+          <h2 class="section__title"><span class="section__title-text">Про нас</span></h2>
+
+          <div class="about-us__content">
+            <div class="about-us__background"></div>
+
+            <div class="about-us__text-wrapper">
+              <p class="about-us__text">
+                <span class="about-us__first-word">"Furniture"</span> – "Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum."
+              </p>
+
+              <p class="about-us__text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum."
+              </p>
+
+              <p class="about-us__text">
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="section__title">Про нас</h2>
-          <p></p>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <h2 class="section__title">Залишились питання?</h2>
+          <h2 class="section__title">
+            <span class="section__title-text">Залишились питання?</span>
+          </h2>
+
           <p></p>
         </div>
       </section>

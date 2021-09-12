@@ -1,0 +1,10 @@
+/* Дивани */
+.goods-filter__title {
+  /* 22px for Montserrat, 24px for Proxima Nova, 24sp • H4 Headline 30px */
+  @include fz(22px, 700, 1.25);
+  height: 30px;
+
+  color: var(--color-text-primary); /* color4 */
+  text-align: center;
+  text-transform: uppercase;
+}

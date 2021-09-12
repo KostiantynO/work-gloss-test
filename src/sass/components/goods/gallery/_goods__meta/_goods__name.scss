@@ -1,0 +1,9 @@
+/* Ліжко Рамона */
+.goods__name {
+  margin-right: auto;
+
+  @include fz(24px, 700, 1.25); /* 24sp • H4 Headline */
+
+  text-align: center;
+  text-transform: uppercase;
+}

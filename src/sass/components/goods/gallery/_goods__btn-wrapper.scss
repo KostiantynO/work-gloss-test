@@ -1,0 +1,13 @@
+.goods__btn-wrapper {
+  transform: translateX(50%);
+}
+
+.goods__catalog-btn {
+  transform: translateX(-50%);
+}
+
+.goods__btn-wrapper,
+.goods__catalog-btn {
+  transition-property: transform;
+  @include transition;
+}

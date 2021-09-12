@@ -4,8 +4,10 @@
   --brand-sans-serif: 'Cuprum', sans-serif;
   --color-text-primary: #1e2e36;
   --color-accent: #44c697;
+  --color-white: #ffffff;
+  --color-discount: #ff1b1b;
+  --color-old-price: #bcbdbb;
   --color-brand: #ffd001;
-  --white: #ffffff;
   --time: 250ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -28,6 +30,20 @@ ol {
 
 img {
   display: block;
+  min-width: 280px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  transition: var(--time) var(--cubic);
+  transition-property: transform, opacity;
+}
+
+.back-btn,
+.next-btn, .goods-filter__btn {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .is-hidden {
@@ -82,8 +98,8 @@ button {
 body {
   font-family: var(--body-sans-serif);
   font-size: 18px;
-  font-weight: 700;
   line-height: 1.25;
+  letter-spacing: -1.1px;
   color: var(--color-text-primary);
 }
 
@@ -93,6 +109,8 @@ body {
 }
 
 .container {
+  contain: content;
+  overflow: hidden;
   padding-right: 20px;
   padding-left: 20px;
   outline: 1px dashed red;
@@ -112,7 +130,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .container {
     padding-right: 51px;
     padding-left: 51px;
@@ -130,19 +148,25 @@ body {
 }
 
 /* Ліжко Ornella */
+/* Категорії товарів */
 .section__title {
-  text-align: center;
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  /* 48 sp • H2 Headline, 60 px*/
   color: var(--color-text-primary);
+  /* color4 */
+  transform: translateX(50%);
+  transition-property: transform;
+  transition: var(--time) var(--cubic);
 }
 
-@media screen and (min-width: 320px) {
-  .section__title {
-    margin-bottom: 50px;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.25;
-    /* 36 sp • H3 Headline */
-  }
+.section__title-text {
+  display: inline-block;
+  transform: translateX(-50%);
+  transition-property: transform;
+  transition: var(--time) var(--cubic);
 }
 
 @media screen and (min-width: 320px) {
@@ -396,8 +420,8 @@ body {
   padding: 14px 46px;
   font-family: inherit;
   /* 18 sp • H5 Headline */
-  color: var(--white);
-  font-size: 16px;
+  color: var(--color-white);
+  font-size: 18px;
   font-weight: 700;
   line-height: 1.25;
   text-overflow: ellipsis;
@@ -406,7 +430,7 @@ body {
   background-color: var(--color-accent);
   /* color3 */
   border-radius: 3px;
-  border: 1px solid transparent;
+  border: none;
   /* Замовити дзвінок */
 }
 
@@ -420,6 +444,7 @@ body {
 
 .hero {
   padding-top: 0;
+  background-color: var(--color-text-primary);
   background-image: url("../src/images/hero-bg/hero-bg-1920.jpg");
   background-image: url("../src/images/hero-bg/hero-bg-1920.webp");
   background-repeat: no-repeat;
@@ -515,19 +540,11 @@ body {
   text-transform: uppercase;
 }
 
-.slide-control__back-btn,
-.slide-control__next-btn {
-  margin: 0;
-}
-
 .back-btn,
 .next-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-  background-color: transparent;
-  border: none;
   border-radius: 50%;
 }
 
@@ -548,10 +565,13 @@ body {
     margin-top: -30px;
     margin-left: -30px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 .advantages__item {
+  flex-grow: 1;
   transition-property: transform, opacity;
   transition: var(--time) var(--cubic);
 }
@@ -579,14 +599,14 @@ body {
 @media screen and (min-width: 320px) {
   .goods-filter__list {
     margin-top: -20px;
-    margin-left: -20px;
+    margin-left: -200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
   .goods-filter__list {
     margin-right: 0;
   }
@@ -596,19 +616,74 @@ body {
   max-width: fit-content;
 }
 
-@media screen and (min-width: 320px) {
-  .goods-filter__item {
-    margin-top: 20px;
-    margin-bottom: 0;
-    margin-left: 20px;
-    flex-basis: calc(100% / 2 - 20px);
+@media screen and (max-width: 319px) {
+  .goods-filter__item:not(:last-child) {
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 320px) {
   .goods-filter__item {
-    flex-basis: calc(100% / 6 - 20px);
+    margin: 20px 0 0 200px;
+    flex-basis: calc(100% / 2 - 200px);
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .goods-filter__item {
+    flex-basis: calc(100% / 6 - 200px);
+  }
+}
+
+.goods-filter__btn {
+  position: relative;
+  transition-property: color, background-color;
+  transition: var(--time) var(--cubic);
+}
+
+.goods-filter__btn::after, .goods-filter__btn--current::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-accent);
+  /* color3 */
+  transition-property: transform;
+  transition: var(--time) var(--cubic);
+}
+
+.goods-filter__btn::after {
+  transform: scaleX(0);
+}
+
+.goods-filter__btn:focus::after, .goods-filter__btn:hover::after, .goods-filter__btn.goods-filter__btn--current::after {
+  transform: scaleX(100%);
+}
+
+.goods-filter__svg {
+  margin-bottom: 10px;
+}
+
+/* Дивани */
+.goods-filter__title {
+  /* 22px for Montserrat, 24px for Proxima Nova, 24sp • H4 Headline 30px */
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  height: 30px;
+  color: var(--color-text-primary);
+  /* color4 */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.goods__gallery {
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 320px) {
@@ -617,7 +692,12 @@ body {
     margin-left: -30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
+}
+
+.goods__item {
+  flex-grow: 1;
 }
 
 @media screen and (min-width: 320px) {
@@ -626,6 +706,170 @@ body {
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
   }
+}
+
+.goods__link {
+  position: relative;
+}
+
+.goods__marker {
+  position: absolute;
+  left: 0;
+  padding: 5px 15px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -1.1px;
+  color: var(--color-white);
+  text-align: center;
+  text-transform: uppercase;
+  /* Frame 201, Хiт продаж */
+  /* Акція */
+}
+
+.goods__marker--new {
+  top: 10px;
+  background-color: var(--color-text-primary);
+  /* color4 */
+}
+
+.goods__marker--discount {
+  top: 48px;
+  background-color: var(--color-discount);
+  /* color4 */
+}
+
+.goods__meta {
+  padding: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .goods__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+
+/* Ліжко Рамона */
+.goods__name {
+  margin-right: auto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  /* 24sp • H4 Headline */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* 8 999 грн (Normal price) */
+.goods__price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  /* 24sp • H4 Headline, lh: 30px */
+  color: var(--color-text-primary);
+  /* color4 */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.goods__price--current {
+  margin-right: 10px;
+  color: var(--color-discount);
+}
+
+.goods__price--previous {
+  text-decoration-line: line-through;
+  font-size: 18px;
+  color: var(--color-old-price);
+  /* color2 */
+}
+
+.goods__btn-wrapper {
+  transform: translateX(50%);
+}
+
+.goods__catalog-btn {
+  transform: translateX(-50%);
+}
+
+.goods__btn-wrapper,
+.goods__catalog-btn {
+  transition-property: transform;
+  transition: var(--time) var(--cubic);
+}
+
+.about-us__container {
+  min-width: 1407px;
+  min-height: 675px;
+}
+
+.about-us__content {
+  position: relative;
+  display: flex;
+}
+
+/* Rectangle 174 */
+.about-us__background {
+  position: relative;
+  top: 0;
+  left: 51px;
+  width: 1407px;
+  height: 675px;
+  margin-left: auto;
+  background-color: var(--color-text-primary);
+  background-image: url("../src/images/about-us/about-us.jpg");
+  background-image: url("../src/images/about-us/about-us.webp");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .about-us__background {
+    background-image: url("../src/images/about-us/about-us@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .about-us__background {
+    background-image: url("../src/images/about-us/about-us@2x.webp");
+  }
+}
+
+.about-us__text-wrapper {
+  position: absolute;
+  inset: 0;
+  width: 740px;
+  height: 475px;
+  padding: 50px 30px 50px 0;
+  margin: auto 0;
+  background-color: var(--color-white);
+}
+
+.about-us__text-wrapper::after {
+  /* Rectangle 176 */
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 15px;
+  height: 100%;
+  background: var(--color-accent);
+  /* color3 */
+  border-radius: 0 3px 3px 0;
+}
+
+.about-us__text:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.about-us__first-word {
+  font-weight: 700;
+  color: var(--color-accent);
+  /* color3 */
+  text-transform: uppercase;
 }
 
 .brand__desc {

@@ -59,11 +59,25 @@
 // Goods - Filter
 @import './goods/filter/goods-filter';
 @import './goods/filter/goods-filter__list';
+@import './goods/filter/goods-filter__btn';
+@import './goods/filter/goods-filter__svg';
+@import './goods/filter/goods-filter__title';
+
 // Goods - Gallery
 @import './goods/gallery/goods__gallery';
 @import './goods/gallery/goods__list';
+@import './goods/gallery/goods__link';
+@import './goods/gallery/goods__marker';
+@import './goods/gallery/goods__thumb';
+@import './goods/gallery/_goods__meta/goods__meta';
+@import './goods/gallery/_goods__meta/goods__name';
+@import './goods/gallery/_goods__meta/goods__price';
+
+@import './goods/gallery/goods__btn-wrapper';
 
 // About us
+@import './about-us/about-us';
+@import './about-us/about-us__text';
 
 // Still have questions?
 
