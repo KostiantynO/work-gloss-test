@@ -1,0 +1,28 @@
+.about-us__text-wrapper {
+  position: absolute;
+  top: 0;
+  left: -51px;
+  bottom: 0;
+
+  max-width: 791px;
+  max-height: fit-content;
+
+  padding: 50px 30px 50px 51px;
+  margin: auto 0;
+
+  background-color: var(--color-white);
+
+  &::after {
+    /* Rectangle 176 */
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 0;
+
+    width: 15px;
+    height: 100%;
+
+    background: var(--color-accent); /* color3 */
+    border-radius: 0 3px 3px 0;
+  }
+}

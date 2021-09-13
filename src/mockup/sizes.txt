@@ -5,3 +5,9 @@ Goods Gallery:
   komod   106          mr197
   shafa   100          mr200
   kuhnya  100          mr160
+
+
+
+pattern
+<input name='username' type='text'     pattern="^[a-zA-Z]+\s[a-zA-Z]+$" >
+<input name='password' type='password' pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"

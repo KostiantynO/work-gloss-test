@@ -1,0 +1,28 @@
+.consultancy__text-wrapper {
+  position: absolute;
+  top: 0;
+  right: -51px;
+  bottom: 0;
+
+  width: 513px;
+  max-height: fit-content;
+
+  padding: 50px 51px 50px 30px;
+  margin: auto 0;
+
+  background-color: var(--color-white);
+
+  &::before {
+    /* Rectangle 176 */
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0;
+
+    width: 15px;
+    height: 100%;
+
+    background: var(--color-accent); /* color3 */
+    border-radius: 3px 0 0 3px;
+  }
+}

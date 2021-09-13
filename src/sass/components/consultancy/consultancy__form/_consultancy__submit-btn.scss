@@ -1,4 +1,7 @@
 .consultancy__btn-wrapper {
+  display: flex;
+  flex-direction: column;
+
   margin-bottom: 30px;
 
   transform: translateX(50%);

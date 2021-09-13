@@ -830,9 +830,13 @@
                     ><input
                       class="consultancy__input consultancy__name"
                       type="text"
-                      title="Ваше iм'я"
-                      placeholder="Віталій"
+                      name="customer-name"
+                      title="Ваше iм'я (вiд 4 символiв)"
+                      pattern="^[а-яА-Я]+$"
+                      placeholder=" "
+                      minlength="4"
                       maxlength="64"
+                      required
                     />
 
                     <span class="consultancy__label-text">Віталій</span>
@@ -842,9 +846,17 @@
                     ><input
                       class="consultancy__input consultancy__phone"
                       type="tel"
-                      title="Ваш мобiльний номер"
-                      placeholder="Номер телефону"
-                      maxlength="12"
+                      name="customer-tel"
+                      title="Ваш моб. номер (вiд десяти до пятнадцяти цифр, [0-9])"
+                      pattern="^(?=.*\d)(?!.*[a-z])(?!.*[A-Z]).*$"
+                      placeholder=" "
+                      minlength="10"
+                      maxlength="15"
+                      required
+                      +38
+                      0980
+                      759
+                      748
                     />
 
                     <span class="consultancy__label-text">Номер телефону</span>
@@ -858,8 +870,9 @@
                 </div>
 
                 <p class="consultancy__text">
-                  Залиште заявку або телефонуйте за номером <b>(099) 111 22 33</b>, і наш менеджер
-                  звяжеться з вами для кваліфікованої консультації.
+                  Залиште заявку або телефонуйте за номером
+                  <b class="consultancy__text--bold">(099) 111 22 33</b>, і наш менеджер звяжеться з
+                  вами для кваліфікованої консультації.
                 </p>
               </form>
             </div>
@@ -869,15 +882,24 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <button class="back-to-top-btn" type="button"></button>
-
-        <div class="brand">
-          <svg class="brand__logo" width="20" height="21">
-            <use href="./src/images/sprite.svg#icon-brand-gloss"></use>
-          </svg>
-
-          <p class="brand__desc">Глянець — розробка інтернет-магазинів</p>
+        <div class="to-top-btn-wrapper">
+          <button class="to-top-btn" type="button">
+            <svg class="to-top-btn__svg" width="18" height="18">
+              <use href="./src/images/sprite.svg#icon-to-top-arrow"></use>
+            </svg>
+          </button>
         </div>
+
+        <div class="page-footer__left">
+          <div class="brand">
+            <svg class="brand__logo" width="20" height="21">
+              <use href="./src/images/sprite.svg#icon-brand-gloss"></use>
+            </svg>
+
+            <p class="brand__desc">Глянець — розробка інтернет-магазинів</p>
+          </div>
+        </div>
+        <div class="page-footer__right"></div>
       </div>
     </footer>
   </body>

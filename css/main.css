@@ -39,7 +39,7 @@ img {
 }
 
 .back-btn,
-.next-btn, .goods-filter__btn {
+.next-btn, .goods-filter__btn, .to-top-btn {
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -875,7 +875,7 @@ body {
   width: 1407px;
   height: 675px;
   margin-left: auto;
-  background-color: var(--color-text-primary);
+  background-color: var(--color-old-price);
   background-image: url("../src/images/about-us/about-us.jpg");
   background-image: url("../src/images/about-us/about-us.webp");
   background-repeat: no-repeat;
@@ -897,10 +897,12 @@ body {
 
 .about-us__text-wrapper {
   position: absolute;
-  inset: 0;
-  width: 740px;
-  height: 475px;
-  padding: 50px 30px 50px 0;
+  top: 0;
+  left: -51px;
+  bottom: 0;
+  max-width: 791px;
+  max-height: fit-content;
+  padding: 50px 30px 50px 51px;
   margin: auto 0;
   background-color: var(--color-white);
 }
@@ -942,9 +944,9 @@ body {
   right: 51px;
   min-width: 1561px;
   min-height: 675px;
-  background-color: var(--color-text-primary);
-  background-image: url("../src/images/about-us/about-us.jpg");
-  background-image: url("../src/images/about-us/about-us.webp");
+  background-color: var(--color-old-price);
+  background-image: url("../src/images/consultancy/consultancy-1.jpg");
+  background-image: url("../src/images/consultancy/consultancy-1.webp");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
@@ -952,23 +954,24 @@ body {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .consultancy__background {
-    background-image: url("../src/images/about-us/about-us@2x.jpg");
+    background-image: url("../src/images/consultancy/consultancy-1@2x.jpg");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .consultancy__background {
-    background-image: url("../src/images/about-us/about-us@2x.webp");
+    background-image: url("../src/images/consultancy/consultancy-1@2x.webp");
   }
 }
 
 .consultancy__text-wrapper {
   position: absolute;
-  inset: 0;
-  left: unset;
-  width: 462px;
-  height: 457px;
-  padding: 50px 0 50px 30px;
+  top: 0;
+  right: -51px;
+  bottom: 0;
+  width: 513px;
+  max-height: fit-content;
+  padding: 50px 51px 50px 30px;
   margin: auto 0;
   background-color: var(--color-white);
 }
@@ -999,6 +1002,11 @@ body {
 
 .consultancy__text {
   width: 395px;
+  letter-spacing: -1px;
+}
+
+.consultancy__text--bold {
+  letter-spacing: normal;
 }
 
 .consultancy__group {
@@ -1016,9 +1024,11 @@ body {
 }
 
 .consultancy__label-text {
-  padding: 14px 15px;
   position: absolute;
-  transition-property: transform, color;
+  padding: 14px 15px;
+  opacity: 0.6;
+  /* color4 */
+  transition-property: transform, opacity, color;
   transition: var(--time) var(--cubic);
 }
 
@@ -1036,6 +1046,10 @@ body {
 .consultancy__input {
   min-height: 51px;
   padding: 14px 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  /* 22px */
   color: var(--color-text-primary);
   background: var(--color-white);
   border: 1px solid var(--color-text-primary);
@@ -1044,10 +1058,6 @@ body {
 }
 
 .consultancy__input::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.25;
-  /* 22px */
   height: 23px;
   opacity: 0.6;
   /* color4 */
@@ -1059,13 +1069,45 @@ body {
   opacity: 0;
 }
 
+.consultancy__input:focus {
+  box-shadow: 0 0 3px 2px rgba(68, 198, 151, 0.5);
+}
+
 .consultancy__btn-wrapper {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
   transform: translateX(50%);
 }
 
 .consultancy__submit-btn {
   transform: translateX(-50%);
+}
+
+/* Ellipse 11 */
+.to-top-btn {
+  position: relative;
+  top: 0;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* color3 */
+  background: var(--color-accent);
+  box-shadow: 0 4px 12px rgba(130, 130, 130, 0.2);
+}
+
+.to-top-btn__svg {
+  fill: var(--color-white);
+}
+
+.brand {
+  display: flex;
+}
+
+.brand__logo {
+  margin-right: 3px;
+  fill: var(--color-brand);
 }
 
 .brand__desc {

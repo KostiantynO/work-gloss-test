@@ -1,0 +1,20 @@
+/* Ellipse 11 */
+.to-top-btn {
+  @extend %btn;
+
+  position: relative;
+  top: 0;
+  left: -51px + 36px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  /* color3 */
+  background: var(--color-accent);
+  box-shadow: 0 4px 12px rgba(130, 130, 130, 0.2);
+
+  &__svg {
+    fill: var(--color-white);
+  }
+}

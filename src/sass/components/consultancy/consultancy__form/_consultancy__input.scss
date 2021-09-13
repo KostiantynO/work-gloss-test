@@ -4,6 +4,8 @@
 
   padding: 14px 15px;
 
+  @include fz(16px, 400, 1.25); /* 22px */
+
   color: var(--color-text-primary);
   background: var(--color-white);
   border: 1px solid var(--color-text-primary);
@@ -11,7 +13,6 @@
 
   /* Віталій */
   &::placeholder {
-    @include fz(16px, 400, 1.25); /* 22px */
     height: 23px;
     opacity: 0.6; /* color4 */
 
@@ -23,5 +24,12 @@
 
   &:focus::placeholder {
     opacity: 0;
+  }
+
+  $input-shadow: rgba(#44c697, 0.5);
+  // rgba(var(--color-accent), 0.5)
+
+  &:focus {
+    box-shadow: 0 0 3px 2px $input-shadow;
   }
 }

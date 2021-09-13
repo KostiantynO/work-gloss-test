@@ -9,8 +9,11 @@
   }
 
   &-text {
-    padding: 14px 15px;
     position: absolute;
+    padding: 14px 15px;
+    opacity: 0.6; /* color4 */
+    transition-property: transform, opacity, color;
+    @include transition;
 
     .consultancy__input:focus + &,
     .consultancy__input:not(:placeholder-shown) + & {
@@ -21,8 +24,5 @@
     .consultancy__input:focus + & {
       color: var(--color-accent);
     }
-
-    transition-property: transform, color;
-    @include transition;
   }
 }

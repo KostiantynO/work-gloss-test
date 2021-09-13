@@ -7,13 +7,13 @@
   min-width: 1561px;
   min-height: 675px;
 
-  background-color: var(--color-text-primary);
-  background-image: url('../src/images/about-us/about-us.jpg');
-  background-image: url('../src/images/about-us/about-us.webp');
+  background-color: var(--color-old-price);
+  background-image: url('../src/images/consultancy/consultancy-1.jpg');
+  background-image: url('../src/images/consultancy/consultancy-1.webp');
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
 
-  @include bg-retina('../src/images/about-us/about-us@2x.jpg');
-  @include bg-retina('../src/images/about-us/about-us@2x.webp');
+  @include bg-retina('../src/images/consultancy/consultancy-1@2x.jpg');
+  @include bg-retina('../src/images/consultancy/consultancy-1@2x.webp');
 }
