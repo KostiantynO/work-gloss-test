@@ -3,6 +3,7 @@
 @import './shared/social/social';
 @import './shared/social/social__title';
 @import './shared/social/social__list';
+@import './shared/social/social__link';
 @import './shared/social/social__svg';
 
 @import './page-header/page-header';
@@ -24,6 +25,7 @@
 @import './page-header/bottom-row/primary-nav/furniture/furniture';
 @import './page-header/bottom-row/primary-nav/furniture/furniture__list';
 @import './page-header/bottom-row/primary-nav/furniture/furniture__link';
+@import './page-header/bottom-row/primary-nav/furniture/furniture__expand-btn';
 @import './page-header/bottom-row/primary-nav/furniture/furniture__svg';
 @import './page-header/bottom-row/primary-nav/furniture/furniture__submenu';
 @import './page-header/bottom-row/primary-nav/furniture/furniture__sublink';
@@ -33,6 +35,7 @@
 @import './page-header/bottom-row/order/order';
 @import './page-header/bottom-row/order/order__link';
 @import './page-header/bottom-row/order/order__cart';
+@import './page-header/bottom-row/order/order__svg';
 @import './page-header/bottom-row/order/order__desc';
 @import './shared/btn/primary-btn';
 
@@ -93,8 +96,32 @@
 @import './consultancy/consultancy__form/consultancy__submit-btn';
 
 // --------------- FOOTER ---------------
-@import './page-footer/to-top-btn';
+// Footer - To top button
+@import './page-footer/to-top-btn-wrapper/to-top-btn-wrapper';
+@import './page-footer/to-top-btn-wrapper/to-top-btn';
 
-@import './page-footer/brand/brand';
-@import './page-footer/brand/brand__logo';
-@import './page-footer/brand/brand__desc';
+// Footer - Content
+@import './page-footer/page-footer__content/page-footer__content';
+
+// Footer - Background
+@import './page-footer/page-footer__content/page-footer__background/page-footer__background';
+
+// Footer - Content - Left
+@import './page-footer/page-footer__content/page-footer__left/page-footer__left';
+@import './page-footer/page-footer__content/page-footer__left/page-footer-nav/page-footer-nav__list';
+
+@import './page-footer/page-footer__content/page-footer__left/copyright/page-footer__copyright';
+@import './page-footer/page-footer__content/page-footer__left/copyright/brand/brand';
+@import './page-footer/page-footer__content/page-footer__left/copyright/brand/brand__logo';
+@import './page-footer/page-footer__content/page-footer__left/copyright/brand/brand__desc';
+
+// Footer - Address
+@import './page-footer/page-footer__content/page-footer__left/page-footer__contacts/address/page-footer__address';
+@import './page-footer/page-footer__content/page-footer__left/page-footer__contacts/address/address__list';
+@import './page-footer/page-footer__content/page-footer__left/page-footer__contacts/address/address__link';
+@import './page-footer/page-footer__content/page-footer__left/page-footer__contacts/address/address__svg';
+@import './page-footer/page-footer__content/page-footer__left/page-footer__contacts/address/address__phones';
+
+@import './page-footer/page-footer__content/page-footer__left/page-footer__contacts/page-footer-social/page-footer__social';
+@import './page-footer/page-footer__content/page-footer__left/page-footer__contacts/page-footer-social/page-footer__social-title';
+@import './page-footer/page-footer__content/page-footer__left/page-footer__contacts/page-footer-social/page-footer-social__svg';

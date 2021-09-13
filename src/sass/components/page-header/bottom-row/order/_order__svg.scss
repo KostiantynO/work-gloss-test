@@ -1,11 +1,9 @@
-.social__svg {
-  @extend %svg;
-
+.order__svg {
   @include transition;
   transition-property: fill;
 
-  .social__link:focus &,
-  .social__link:hover & {
+  .order__link:focus &,
+  .order__link:hover & {
     fill: currentColor;
   }
 }

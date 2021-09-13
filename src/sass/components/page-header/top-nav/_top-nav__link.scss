@@ -4,6 +4,12 @@
 
   text-transform: uppercase;
   @include transition;
+  transition-property: color;
+
+  &:focus,
+  &:hover {
+    color: darken(#44c697, 1);
+  }
 
   &::after,
   &--current::after {
@@ -18,8 +24,8 @@
 
     background-color: var(--color-accent); /* color3 */
 
-    transition-property: transform;
     @include transition;
+    transition-property: transform;
   }
 
   &::after {
@@ -30,5 +36,23 @@
   &:hover::after,
   &.top-nav__link--current::after {
     transform: scaleX(100%);
+  }
+
+  &--inverted {
+    display: inline-flex;
+    align-items: center;
+
+    color: var(--color-white);
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 2px;
+
+      margin-right: 6px;
+
+      background-color: var(--color-accent);
+    }
   }
 }

@@ -5,10 +5,23 @@
   }
 }
 
+.page-footer-furniture__list {
+  display: block;
+
+  margin-right: 55px;
+
+  font-weight: 700;
+}
+
 .furniture__item {
   position: relative;
 
   &:not(:last-child) {
     margin-right: 15px;
   }
+}
+
+.page-footer-furniture__item:not(:last-child) {
+  margin-bottom: 15px;
+  margin-right: 0;
 }

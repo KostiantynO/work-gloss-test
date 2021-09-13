@@ -1,0 +1,22 @@
+/* Rectangle 176 */
+.page-footer__background {
+  position: relative;
+  top: 0;
+  left: 51px;
+  margin-left: auto;
+
+  width: 1089px;
+  height: 520px;
+
+  background: url(illustration-of-the-living-room-interior.jpg);
+
+  background-color: var(--color-text-primary);
+  background-image: url('../src/images/footer-bg/footer-bg.jpg');
+  background-image: url('../src/images/footer-bg/footer-bg.webp');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+
+  @include bg-retina('../src/images/footer-bg/footer-bg@2x.jpg');
+  @include bg-retina('../src/images/footer-bg/footer-bg@2x.webp');
+}

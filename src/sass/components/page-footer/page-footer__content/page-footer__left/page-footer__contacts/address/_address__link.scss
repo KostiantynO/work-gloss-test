@@ -1,0 +1,16 @@
+.address__link {
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+
+  @include fz(17px, 400, 1.25, -1px); // Proxima Nova = 18px
+  mix-blend-mode: normal;
+
+  @include transition;
+  transition-property: color;
+
+  &:focus,
+  &:hover {
+    color: darken(#44c697, 1);
+  }
+}

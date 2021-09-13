@@ -1,0 +1,7 @@
+.address__svg {
+  margin-right: 5px;
+
+  @include transition;
+  transition-property: fill;
+  fill: currentColor;
+}

@@ -1,0 +1,11 @@
+.page-footer__copyright-wrapper {
+  display: flex;
+}
+
+/* © ТОВ Furniture, працюємо з 2006 року */
+.page-footer__copyright {
+  margin-right: auto;
+
+  @include fz(14px, 400, 1.2, normal); // 14 sp • Lable,  lh: 17px */
+  color: var(--color-white);
+}

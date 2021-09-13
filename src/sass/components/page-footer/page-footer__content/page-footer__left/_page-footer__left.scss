@@ -1,0 +1,16 @@
+/* Rectangle 180 */
+.page-footer__left {
+  position: absolute;
+  top: 0;
+  left: -51px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px 51px 15px;
+
+  width: 831px;
+  height: 520px;
+
+  background: var(--color-text-primary); /* color4 */
+}

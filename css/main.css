@@ -38,7 +38,7 @@ img {
   transition-property: transform, opacity;
 }
 
-.back-btn,
+.furniture__expand-btn, .back-btn,
 .next-btn, .goods-filter__btn, .to-top-btn {
   margin: 0;
   padding: 0;
@@ -97,7 +97,7 @@ button {
 
 body {
   font-family: var(--body-sans-serif);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.25;
   letter-spacing: -1.1px;
   color: var(--color-text-primary);
@@ -205,6 +205,25 @@ body {
   margin-right: 5px;
 }
 
+.social__link {
+  transition: var(--time) var(--cubic);
+  transition-property: color;
+}
+
+.social__link:focus, .social__link:hover {
+  color: #40c595;
+}
+
+.social__svg {
+  transition: var(--time) var(--cubic);
+  transition-property: fill;
+}
+
+.social__link:focus .social__svg,
+.social__link:hover .social__svg {
+  fill: currentColor;
+}
+
 .page-header {
   padding-top: 10px;
   padding-bottom: 15px;
@@ -222,11 +241,13 @@ body {
   }
 }
 
-.phones__smartphone-icon {
+.phones__icon-smartphone {
   margin-right: 5px;
+  fill: var(--color-white);
+  stroke: var(--color-text-primary);
 }
 
-.phones__chevron-big-icon {
+.phones__icon-chevron-big {
   margin-left: 5px;
 }
 
@@ -240,6 +261,18 @@ body {
 
 .phones__sublink {
   white-space: nowrap;
+}
+
+.phones__link,
+.phones__sublink {
+  transition: var(--time) var(--cubic);
+  transition-property: color;
+}
+
+.phones__link:focus, .phones__link:hover,
+.phones__sublink:focus,
+.phones__sublink:hover {
+  color: #40c595;
 }
 
 .phones__submenu {
@@ -292,6 +325,11 @@ body {
   width: 100%;
   text-transform: uppercase;
   transition: var(--time) var(--cubic);
+  transition-property: color;
+}
+
+.top-nav__link:focus, .top-nav__link:hover {
+  color: #40c595;
 }
 
 .top-nav__link::after, .top-nav__link--current::after {
@@ -305,8 +343,8 @@ body {
   height: 3px;
   background-color: var(--color-accent);
   /* color3 */
-  transition-property: transform;
   transition: var(--time) var(--cubic);
+  transition-property: transform;
 }
 
 .top-nav__link::after {
@@ -315,6 +353,21 @@ body {
 
 .top-nav__link:focus::after, .top-nav__link:hover::after, .top-nav__link.top-nav__link--current::after {
   transform: scaleX(100%);
+}
+
+.top-nav__link--inverted {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.top-nav__link--inverted::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  margin-right: 6px;
+  background-color: var(--color-accent);
 }
 
 @media screen and (min-width: 320px) {
@@ -333,6 +386,13 @@ body {
   }
 }
 
+.page-footer__furniture {
+  align-items: baseline;
+  margin-bottom: auto;
+  color: var(--color-white);
+  font-weight: 700;
+}
+
 @media screen and (min-width: 320px) {
   .furniture__list {
     margin-right: 115px;
@@ -341,12 +401,23 @@ body {
   }
 }
 
+.page-footer-furniture__list {
+  display: block;
+  margin-right: 55px;
+  font-weight: 700;
+}
+
 .furniture__item {
   position: relative;
 }
 
 .furniture__item:not(:last-child) {
   margin-right: 15px;
+}
+
+.page-footer-furniture__item:not(:last-child) {
+  margin-bottom: 15px;
+  margin-right: 0;
 }
 
 @media screen and (min-width: 320px) {
@@ -361,6 +432,32 @@ body {
   margin-right: 3px;
   /* 18 sp • H5 Headline */
   text-transform: uppercase;
+  transition: var(--time) var(--cubic);
+  transition-property: color;
+}
+
+.furniture__link:focus, .furniture__link:hover {
+  color: #40c595;
+}
+
+.furniture__link--inverted {
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+}
+
+.furniture__link--inverted::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  margin-right: 6px;
+  background-color: var(--color-accent);
+}
+
+.furniture__expand-btn {
+  width: 20px;
+  height: 20px;
 }
 
 .furniture__submenu {
@@ -372,12 +469,14 @@ body {
   transition: var(--time) var(--cubic);
 }
 
+.page-footer__logo {
+  margin-bottom: 50px;
+}
+
 .logo {
+  transition: var(--time) var(--cubic);
+  transition-property: color;
   /* Furniture.test */
-  /* 36 sp • H3 Headline */
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.25;
 }
 
 @media screen and (min-width: 320px) {
@@ -387,13 +486,38 @@ body {
   }
 }
 
+.logo--inverted {
+  color: var(--color-white);
+}
+
+.logo:focus, .logo:hover {
+  color: #40c595;
+}
+
+.logo__desc {
+  width: 220px;
+  height: 45px;
+  /* 36 sp • H3 Headline */
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
 .logo__desc::first-letter {
   color: var(--color-accent);
-  /* color3 */
 }
 
 .logo__svg {
   margin-right: 15px;
+  transition: var(--time) var(--cubic);
+  transition-property: fill;
+}
+
+.logo__svg--white,
+.logo:focus .logo__svg,
+.logo:hover .logo__svg {
+  fill: currentColor;
 }
 
 @media screen and (min-width: 320px) {
@@ -405,6 +529,12 @@ body {
 
 .order__link {
   margin-right: 30px;
+  transition: var(--time) var(--cubic);
+  transition-property: color;
+}
+
+.order__link:focus, .order__link:hover {
+  color: #40c595;
 }
 
 @media screen and (min-width: 320px) {
@@ -416,6 +546,16 @@ body {
 
 .order__svg {
   margin-right: 5px;
+}
+
+.order__svg {
+  transition: var(--time) var(--cubic);
+  transition-property: fill;
+}
+
+.order__link:focus .order__svg,
+.order__link:hover .order__svg {
+  fill: currentColor;
 }
 
 .order__desc {
@@ -433,7 +573,7 @@ body {
   font-family: inherit;
   /* 18 sp • H5 Headline */
   color: var(--color-white);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1.25;
   text-overflow: ellipsis;
@@ -443,8 +583,8 @@ body {
   /* color3 */
   border-radius: 3px;
   border: none;
-  transition-property: transform, background-color;
   transition: var(--time) var(--cubic);
+  transition-property: transform, background-color;
   /* Замовити дзвінок */
 }
 
@@ -701,8 +841,8 @@ body {
 .goods-filter__svg {
   margin-bottom: 10px;
   fill: currentColor;
-  transition-property: fill;
   transition: var(--time) var(--cubic);
+  transition-property: fill;
 }
 
 .goods-filter__btn:focus .goods-filter__svg,
@@ -920,6 +1060,11 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
+.about-us__text {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
 .about-us__text:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -1084,11 +1229,16 @@ body {
   transform: translateX(-50%);
 }
 
+.to-top-btn-wrapper {
+  height: 59px;
+}
+
 /* Ellipse 11 */
 .to-top-btn {
   position: relative;
-  top: 0;
+  top: calc(100% - 9px);
   left: -15px;
+  z-index: 1;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1101,8 +1251,81 @@ body {
   fill: var(--color-white);
 }
 
+.page-footer__content {
+  position: relative;
+}
+
+/* Rectangle 176 */
+.page-footer__background {
+  position: relative;
+  top: 0;
+  left: 51px;
+  margin-left: auto;
+  width: 1089px;
+  height: 520px;
+  background: url(illustration-of-the-living-room-interior.jpg);
+  background-color: var(--color-text-primary);
+  background-image: url("../src/images/footer-bg/footer-bg.jpg");
+  background-image: url("../src/images/footer-bg/footer-bg.webp");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .page-footer__background {
+    background-image: url("../src/images/footer-bg/footer-bg@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .page-footer__background {
+    background-image: url("../src/images/footer-bg/footer-bg@2x.webp");
+  }
+}
+
+/* Rectangle 180 */
+.page-footer__left {
+  position: absolute;
+  top: 0;
+  left: -51px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 51px 15px;
+  width: 831px;
+  height: 520px;
+  background: var(--color-text-primary);
+  /* color4 */
+}
+
+.page-footer-nav__list {
+  display: block;
+  margin-right: 87px;
+}
+
+.page-footer-nav__item:not(:last-child) {
+  height: 22px;
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+.page-footer__copyright-wrapper {
+  display: flex;
+}
+
+/* © ТОВ Furniture, працюємо з 2006 року */
+.page-footer__copyright {
+  margin-right: auto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: var(--color-white);
+}
+
 .brand {
   display: flex;
+  align-items: center;
 }
 
 .brand__logo {
@@ -1110,7 +1333,81 @@ body {
   fill: var(--color-brand);
 }
 
+/* Глянець — розробка інтернет-магазинів */
 .brand__desc {
   font-family: var(--brand-sans-serif);
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.address {
+  margin-bottom: 30px;
+  font-style: normal;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.address__link {
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  mix-blend-mode: normal;
+  transition: var(--time) var(--cubic);
+  transition-property: color;
+}
+
+.address__link:focus, .address__link:hover {
+  color: #40c595;
+}
+
+.address__svg {
+  margin-right: 5px;
+  transition: var(--time) var(--cubic);
+  transition-property: fill;
+  fill: currentColor;
+}
+
+.address__phones {
+  align-items: flex-start;
+}
+
+.address-phones__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.address__icon-smartphone {
+  fill: var(--color-text-primary);
+  stroke: var(--color-accent);
+}
+
+.address-phones__link {
+  color: var(--color-accent);
+}
+
+.page-footer__social {
+  display: block;
+}
+
+/* Ми в соціальних мережах: */
+.page-footer__social-title {
+  margin-right: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: var(--color-white);
+}
+
+.page-footer__social-svg {
+  fill: var(--color-white);
 }
 /*# sourceMappingURL=main.css.map */

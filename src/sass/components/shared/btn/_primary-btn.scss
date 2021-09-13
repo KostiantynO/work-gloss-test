@@ -20,8 +20,8 @@
   border-radius: 3px;
   border: none;
 
-  transition-property: transform, background-color;
   @include transition;
+  transition-property: transform, background-color;
 
   &:focus,
   &:hover {

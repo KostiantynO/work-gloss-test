@@ -27,21 +27,21 @@
 
             <ul class="social__list">
               <li class="social__item">
-                <a rel="noopener noreferrer nofollow" href="#">
+                <a class="social__link" rel="noopener noreferrer nofollow" href="#">
                   <svg class="social__svg" width="40" height="40">
                     <use href="./src/images/sprite.svg#icon-telegram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a rel="noopener noreferrer nofollow" href="#">
+                <a class="social__link" rel="noopener noreferrer nofollow" href="#">
                   <svg class="social__svg" width="40" height="40">
                     <use href="./src/images/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
-                <a rel="noopener noreferrer nofollow" href="#">
+                <a class="social__link" rel="noopener noreferrer nofollow" href="#">
                   <svg class="social__svg" width="40" height="40">
                     <use href="./src/images/sprite.svg#icon-instagram"></use>
                   </svg>
@@ -50,7 +50,7 @@
             </ul>
           </div>
           <div class="phones top-nav__phones">
-            <svg class="phones__svg phones__smartphone-icon" width="24" height="24">
+            <svg class="phones__svg phones__icon-smartphone" width="24" height="24">
               <use href="./src/images/sprite.svg#icon-smartphone"></use>
             </svg>
 
@@ -69,7 +69,7 @@
               </li>
             </ul>
 
-            <svg class="phones__svg phones__chevron-big-icon" width="24" height="24">
+            <svg class="phones__svg phones__icon-chevron-big" width="24" height="24">
               <use href="./src/images/sprite.svg#icon-chevron"></use>
             </svg>
           </div>
@@ -104,9 +104,11 @@
                 <li class="furniture__item">
                   <div class="furniture__link-wrapper">
                     <a class="furniture__link" href="#">Дивани</a>
-                    <svg class="furniture__svg" width="20" height="20">
-                      <use href="./src/images/sprite.svg#icon-chevron"></use>
-                    </svg>
+                    <button class="furniture__expand-btn" type="button">
+                      <svg class="furniture__svg" width="20" height="20">
+                        <use href="./src/images/sprite.svg#icon-chevron"></use>
+                      </svg>
+                    </button>
                   </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
@@ -129,9 +131,11 @@
                 <li class="furniture__item">
                   <div class="furniture__link-wrapper">
                     <a class="furniture__link" href="#">Ліжка</a>
-                    <svg class="furniture__svg" width="20" height="20">
-                      <use href="./src/images/sprite.svg#icon-chevron"></use>
-                    </svg>
+                    <button class="furniture__expand-btn" type="button">
+                      <svg class="furniture__svg" width="20" height="20">
+                        <use href="./src/images/sprite.svg#icon-chevron"></use>
+                      </svg>
+                    </button>
                   </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
@@ -154,9 +158,11 @@
                 <li class="furniture__item">
                   <div class="furniture__link-wrapper">
                     <a class="furniture__link" href="#">Крісла</a>
-                    <svg class="furniture__svg" width="20" height="20">
-                      <use href="./src/images/sprite.svg#icon-chevron"></use>
-                    </svg>
+                    <button class="furniture__expand-btn" type="button">
+                      <svg class="furniture__svg" width="20" height="20">
+                        <use href="./src/images/sprite.svg#icon-chevron"></use>
+                      </svg>
+                    </button>
                   </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
@@ -179,9 +185,11 @@
                 <li class="furniture__item">
                   <div class="furniture__link-wrapper">
                     <a class="furniture__link" href="#">Комоди</a>
-                    <svg class="furniture__svg" width="20" height="20">
-                      <use href="./src/images/sprite.svg#icon-chevron"></use>
-                    </svg>
+                    <button class="furniture__expand-btn" type="button">
+                      <svg class="furniture__svg" width="20" height="20">
+                        <use href="./src/images/sprite.svg#icon-chevron"></use>
+                      </svg>
+                    </button>
                   </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
@@ -204,9 +212,11 @@
                 <li class="furniture__item">
                   <div class="furniture__link-wrapper">
                     <a class="furniture__link" href="#">Шафи</a>
-                    <svg class="furniture__svg" width="20" height="20">
-                      <use href="./src/images/sprite.svg#icon-chevron"></use>
-                    </svg>
+                    <button class="furniture__expand-btn" type="button">
+                      <svg class="furniture__svg" width="20" height="20">
+                        <use href="./src/images/sprite.svg#icon-chevron"></use>
+                      </svg>
+                    </button>
                   </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
@@ -229,9 +239,11 @@
                 <li class="furniture__item">
                   <div class="furniture__link-wrapper">
                     <a class="furniture__link" href="#">Кухня</a>
-                    <svg class="furniture__svg" width="20" height="20">
-                      <use href="./src/images/sprite.svg#icon-chevron"></use>
-                    </svg>
+                    <button class="furniture__expand-btn" type="button">
+                      <svg class="furniture__svg" width="20" height="20">
+                        <use href="./src/images/sprite.svg#icon-chevron"></use>
+                      </svg>
+                    </button>
                   </div>
                   <ul class="furniture__submenu">
                     <li class="furniture__subitem">
@@ -252,6 +264,7 @@
                   </ul>
                 </li>
               </ul>
+
               <a class="logo" href="./">
                 <svg class="logo__svg" width="125" height="75">
                   <use href="./src/images/sprite.svg#icon-logo-black"></use>
@@ -267,9 +280,11 @@
                 <svg class="order__svg" width="30" height="30">
                   <use href="./src/images/sprite.svg#icon-cart"></use>
                 </svg>
+
                 <span class="order__desc">Кошик</span>
               </div>
             </a>
+
             <button class="primary-btn" type="button">
               <span class="primary-btn__desc">Замовити дзвінок</span>
             </button>
@@ -829,8 +844,8 @@
                   <label class="consultancy__label"
                     ><input
                       class="consultancy__input consultancy__name"
-                      type="text"
                       name="customer-name"
+                      type="text"
                       title="Ваше iм'я (вiд 4 символiв)"
                       pattern="^[а-яА-Я]+$"
                       placeholder=" "
@@ -844,9 +859,11 @@
 
                   <label class="consultancy__label"
                     ><input
+                      748
+                      759
                       class="consultancy__input consultancy__phone"
-                      type="tel"
                       name="customer-tel"
+                      type="tel"
                       title="Ваш моб. номер (вiд десяти до пятнадцяти цифр, [0-9])"
                       pattern="^(?=.*\d)(?!.*[a-z])(?!.*[A-Z]).*$"
                       placeholder=" "
@@ -855,8 +872,6 @@
                       required
                       +38
                       0980
-                      759
-                      748
                     />
 
                     <span class="consultancy__label-text">Номер телефону</span>
@@ -881,7 +896,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__container">
         <div class="to-top-btn-wrapper">
           <button class="to-top-btn" type="button">
             <svg class="to-top-btn__svg" width="18" height="18">
@@ -890,16 +905,171 @@
           </button>
         </div>
 
-        <div class="page-footer__left">
-          <div class="brand">
-            <svg class="brand__logo" width="20" height="21">
-              <use href="./src/images/sprite.svg#icon-brand-gloss"></use>
-            </svg>
+        <div class="page-footer__content">
+          <div class="page-footer__background"></div>
 
-            <p class="brand__desc">Глянець — розробка інтернет-магазинів</p>
+          <div class="page-footer__left">
+            <a class="logo logo--inverted page-footer__logo" href="./">
+              <svg class="logo__svg logo__svg--white" width="125" height="75">
+                <use href="./src/images/sprite.svg#icon-logo-white"></use>
+              </svg>
+              <span class="logo__desc">Furniture.test</span>
+            </a>
+
+            <div class="furniture page-footer__furniture">
+              <ul class="furniture__list page-footer-furniture__list">
+                <li class="furniture__item page-footer-furniture__item">
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link furniture__link--inverted" href="#">Дивани</a>
+                  </div>
+                </li>
+
+                <li class="furniture__item page-footer-furniture__item">
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link furniture__link--inverted" href="#">Ліжка</a>
+                  </div>
+                </li>
+
+                <li class="furniture__item page-footer-furniture__item">
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link furniture__link--inverted" href="#">Крісла</a>
+                  </div>
+                </li>
+
+                <li class="furniture__item page-footer-furniture__item">
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link furniture__link--inverted" href="#">Шафи</a>
+                  </div>
+                </li>
+
+                <li class="furniture__item page-footer-furniture__item">
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link furniture__link--inverted" href="#">Кухня</a>
+                  </div>
+                </li>
+
+                <li class="furniture__item page-footer-furniture__item">
+                  <div class="furniture__link-wrapper">
+                    <a class="furniture__link furniture__link--inverted" href="#">Комоди</a>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="top-nav__list page-footer-nav__list">
+                <li class="top-nav__item page-footer-nav__item">
+                  <a class="top-nav__link top-nav__link--inverted" href="#0">Акції</a>
+                </li>
+
+                <li class="top-nav__item page-footer-nav__item">
+                  <a class="top-nav__link top-nav__link--inverted" href="#">Доставка та оплата</a>
+                </li>
+
+                <li class="top-nav__item page-footer-nav__item">
+                  <a class="top-nav__link top-nav__link--inverted" href="#">Про нас</a>
+                </li>
+
+                <li class="top-nav__item page-footer-nav__item">
+                  <a class="top-nav__link top-nav__link--inverted" href="#">Контакти</a>
+                </li>
+              </ul>
+
+              <div class="page-footer__contacts-wrapper">
+                <address class="address page-footer__address">
+                  <ul class="address__list">
+                    <li class="address__item">
+                      <a
+                        href="https://goo.gl/maps/NhMhHneALrEVYq1r5"
+                        rel="noopener noreferrer nofollow"
+                        class="address__link"
+                      >
+                        <svg class="address__svg" width="24" height="24">
+                          <use href="./src/images/sprite.svg#icon-map-pin"></use>
+                        </svg>
+
+                        <span class="address__link-text">TEST</span></a
+                      >
+                    </li>
+
+                    <li class="address__item">
+                      <a href="#" rel="noopener noreferrer nofollow" class="address__link">
+                        <svg class="address__svg" width="24" height="24">
+                          <use href="./src/images/sprite.svg#icon-calendar"></use>
+                        </svg>
+
+                        <span class="address__link-text">Пн-Пт, з 10 до 18</span>
+                      </a>
+                    </li>
+
+                    <li class="address__item">
+                      <div class="phones address__phones">
+                        <svg
+                          class="phones__svg phones__icon-smartphone address__icon-smartphone"
+                          width="24"
+                          height="24"
+                        >
+                          <use href="./src/images/sprite.svg#icon-smartphone"></use>
+                        </svg>
+
+                        <ul class="phones__list">
+                          <li class="phones__item address-phones__item">
+                            <a class="phones__link address-phones__link" href="tel:0991112233">
+                              <span class="phones__number">(099) 111 22 33 </span>
+                            </a>
+                          </li>
+
+                          <li class="phones__item address-phones__item">
+                            <a class="phones__link address-phones__link" href="tel:0992223344"
+                              >(099) 222 33 44</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </address>
+
+                <div class="social page-footer__social">
+                  <p class="social__title page-footer__social-title">Ми в соціальних мережах:</p>
+
+                  <ul class="social__list">
+                    <li class="social__item">
+                      <a class="social__link" rel="noopener noreferrer nofollow" href="#">
+                        <svg class="social__svg page-footer__social-svg" width="40" height="40">
+                          <use href="./src/images/sprite.svg#icon-telegram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" rel="noopener noreferrer nofollow" href="#">
+                        <svg class="social__svg page-footer__social-svg" width="40" height="40">
+                          <use href="./src/images/sprite.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" rel="noopener noreferrer nofollow" href="#">
+                        <svg class="social__svg page-footer__social-svg" width="40" height="40">
+                          <use href="./src/images/sprite.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-footer__copyright-wrapper">
+              <p class="copyright page-footer__copyright">© ТОВ Furniture, працюємо з 2006 року</p>
+
+              <div class="brand">
+                <svg class="brand__logo" width="20" height="21">
+                  <use href="./src/images/sprite.svg#icon-brand-gloss"></use>
+                </svg>
+                <p class="brand__desc">Глянець — розробка інтернет-магазинів</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="page-footer__right"></div>
       </div>
     </footer>
   </body>

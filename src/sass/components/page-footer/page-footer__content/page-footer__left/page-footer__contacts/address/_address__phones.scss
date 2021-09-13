@@ -1,0 +1,16 @@
+.address__phones {
+  align-items: flex-start;
+}
+
+.address-phones__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.address__icon-smartphone {
+  fill: var(--color-text-primary);
+  stroke: var(--color-accent);
+}
+
+.address-phones__link {
+  color: var(--color-accent);
+}

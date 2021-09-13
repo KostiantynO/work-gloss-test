@@ -11,4 +11,30 @@
 
   /* 18 sp • H5 Headline */
   text-transform: uppercase;
+
+  @include transition;
+  transition-property: color;
+
+  &:focus,
+  &:hover {
+    color: darken(#44c697, 1);
+  }
+
+  &--inverted {
+    color: var(--color-white);
+
+    display: inline-flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 2px;
+
+      margin-right: 6px;
+
+      background-color: var(--color-accent);
+    }
+  }
 }

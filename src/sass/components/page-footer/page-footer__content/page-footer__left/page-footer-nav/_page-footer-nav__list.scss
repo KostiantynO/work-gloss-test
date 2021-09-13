@@ -1,0 +1,10 @@
+.page-footer-nav__list {
+  display: block;
+  margin-right: 87px;
+}
+
+.page-footer-nav__item:not(:last-child) {
+  height: 22px;
+  margin-right: 0;
+  margin-bottom: 15px;
+}

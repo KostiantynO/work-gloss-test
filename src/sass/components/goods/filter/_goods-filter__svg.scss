@@ -3,8 +3,8 @@
 
   fill: currentColor;
 
-  transition-property: fill;
   @include transition;
+  transition-property: fill;
 
   .goods-filter__btn:focus &,
   .goods-filter__btn:hover & {

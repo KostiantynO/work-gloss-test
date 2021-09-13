@@ -1,0 +1,8 @@
+/* Глянець — розробка інтернет-магазинів */
+.brand__desc {
+  font-family: var(--brand-sans-serif);
+  @include fz(14px, null, 16px, normal);
+  text-transform: uppercase;
+
+  color: var(--color-white);
+}
