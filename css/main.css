@@ -81,6 +81,7 @@ img {
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -101,6 +102,7 @@ body {
   line-height: 1.25;
   letter-spacing: -1.1px;
   color: var(--color-text-primary);
+  contain: content;
 }
 
 .section {
@@ -109,8 +111,6 @@ body {
 }
 
 .container {
-  contain: content;
-  overflow: hidden;
   padding-right: 20px;
   padding-left: 20px;
   outline: 1px dashed red;
@@ -228,6 +228,18 @@ body {
   padding-top: 10px;
   padding-bottom: 15px;
   font-weight: 700;
+  /* Line 1 */
+}
+
+.page-header::after {
+  content: '';
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  border-bottom: 1px solid var(--color-text-primary);
+  opacity: 0.6;
 }
 
 .top-nav__phones {
@@ -298,7 +310,7 @@ body {
 }
 
 .top-nav {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 320px) {
@@ -323,6 +335,10 @@ body {
 .top-nav__link {
   position: relative;
   width: 100%;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -1.4px;
   text-transform: uppercase;
   transition: var(--time) var(--cubic);
   transition-property: color;
@@ -368,6 +384,10 @@ body {
   height: 2px;
   margin-right: 6px;
   background-color: var(--color-accent);
+}
+
+.bottom-row {
+  padding-top: 15px;
 }
 
 @media screen and (min-width: 320px) {
@@ -495,13 +515,14 @@ body {
 }
 
 .logo__desc {
-  width: 220px;
+  max-width: 220px;
+  contain: content;
   height: 45px;
   /* 36 sp • H3 Headline */
   font-size: 33px;
   font-weight: 700;
   line-height: 1.25;
-  letter-spacing: 0;
+  letter-spacing: -1.3px;
 }
 
 .logo__desc::first-letter {
@@ -712,17 +733,38 @@ body {
 .back-btn,
 .next-btn {
   display: inline-flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
 }
 
 .slide-control__back-btn {
   margin-right: 8px;
+  color: inherit;
+}
+
+.slide-control__next-btn {
+  color: var(--color-white);
+}
+
+.slide-control__back-icon {
+  fill: none;
+  stroke: currentColor;
+}
+
+.slide-control__next-icon {
+  fill: var(--color-text-primary);
 }
 
 .advantages {
   contain: content;
+}
+
+.advantages__gallery {
+  position: relative;
+  display: flex;
 }
 
 .advantages__list {
@@ -759,30 +801,119 @@ body {
   left: 210%;
 }
 
+.advantages__thumb {
+  position: relative;
+  min-width: 320px;
+}
+
+.advantages__meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 30px 33px;
+  transition: var(--time) var(--cubic);
+  transition-property: transform;
+}
+
+.advantages__link:focus .advantages__meta,
+.advantages__link:hover .advantages__meta {
+  transform: translateY(-39px);
+}
+
+/* Меблі преміум класу */
+.advantages__title {
+  position: relative;
+  display: inline-block;
+  transition: var(--time) var(--cubic);
+  transition-property: margin;
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 1.37;
+  letter-spacing: -1.3px;
+  /* Proxima Nova = 36 sp • H3 Headline, lh: 45px */
+  color: var(--color-white);
+  /* Rectangle 166 */
+}
+
+.advantages__link:focus .advantages__title,
+.advantages__link:hover .advantages__title {
+  margin-bottom: 18px;
+}
+
+.advantages__title::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 100%;
+  background: var(--color-accent);
+}
+
+/* За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України */
+.advantages__desc {
+  position: absolute;
+  font-size: 18px;
+  line-height: 1.25;
+  color: var(--color-white);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: var(--time) var(--cubic);
+  transition-property: transform, opacity, visibility;
+}
+
+.advantages__link:focus .advantages__desc,
+.advantages__link:hover .advantages__desc {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.advantages__btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.advantages__back-btn {
+  left: 15px;
+  color: var(--color-white);
+}
+
+.advantages__next-btn {
+  right: 15px;
+  color: inherit;
+}
+
+.advantages__back-icon {
+  fill: none;
+  stroke: var(--color-white);
+}
+
+.advantages__next-icon {
+  fill: var(--color-white);
+  stroke: transparent;
+}
+
 @media screen and (min-width: 320px) {
   .goods-filter {
     padding-bottom: 87px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1602px;
   }
 }
 
 @media screen and (min-width: 320px) {
   .goods-filter__list {
-    margin-top: -20px;
-    margin-left: -200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .goods-filter__list {
-    margin-right: 0;
-  }
-}
-
-.goods-filter__item {
-  max-width: fit-content;
 }
 
 @media screen and (max-width: 319px) {
@@ -790,19 +921,6 @@ body {
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 320px) {
-  .goods-filter__item {
-    margin: 20px 0 0 200px;
-    flex-basis: calc(100% / 2 - 200px);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .goods-filter__item {
-    flex-basis: calc(100% / 6 - 200px);
   }
 }
 
@@ -1235,6 +1353,9 @@ body {
 
 /* Ellipse 11 */
 .to-top-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   top: calc(100% - 9px);
   left: -15px;

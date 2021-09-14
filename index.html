@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header" id="top">
       <div class="container">
         <nav class="top-nav page-header__top-nav">
           <div class="social top-nav__social">
@@ -364,18 +364,21 @@
                         loading="lazy"
                         alt="Високоякісні меблі для великої квартири-студії класу люкс"
                         decoding="async"
+                        width="586"
+                        height="350"
                       />
                     </picture>
-                  </div>
 
-                  <div class="advantages__meta">
-                    <h3 class="advantages__title">Меблі преміум класу</h3>
-                    <p class="advantages__desc">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam.
-                    </p>
+                    <div class="advantages__meta">
+                      <h3 class="advantages__title">Меблі преміум класу</h3>
+                      <p class="advantages__desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam.
+                      </p>
+                    </div>
                   </div>
                 </a>
               </li>
+
               <li class="advantages__item current-slide">
                 <a class="advantages__link" href="#">
                   <div class="advantages__thumb">
@@ -397,6 +400,8 @@
                         loading="lazy"
                         alt="Команда людей за столом перемовин у приміщенні iз великими вікнами"
                         decoding="async"
+                        width="586"
+                        height="350"
                       />
                     </picture>
 
@@ -410,6 +415,7 @@
                   </div>
                 </a>
               </li>
+
               <li class="advantages__item current-slide">
                 <a class="advantages__link" href="#">
                   <div class="advantages__thumb">
@@ -431,35 +437,51 @@
                         loading="lazy"
                         alt="Вантажівка із меблями в дорозі, з видом на місто у долині"
                         decoding="async"
+                        width="586"
+                        height="350"
                       />
                     </picture>
 
                     <div class="advantages__meta">
                       <h3 class="advantages__title">Безкоштовна доставка</h3>
                       <p class="advantages__desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
+                        corrupti rerum assumenda sapiente cum eaque aliquam nihil qui sed vel!
+                        Dolorum!
                       </p>
                     </div>
                   </div>
                 </a>
               </li>
+
               <li class="advantages__item is-hidden">
                 <a class="advantages__link" href="#">
                   <div class="advantages__thumb">
                     <picture>
-                      <source />
-                      <source />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./src/images/advantages/advantage-1.webp,
+                          ./src/images/advantages/advantage-1@2x.webp 2x
+                        "
+                      />
                       <img
                         class="advantages__image"
-                        src
+                        srcset="
+                          ./src/images/advantages/advantage-1.jpg,
+                          ./src/images/advantages/advantage-1@2x.jpg 2x
+                        "
+                        src="./src/images/advantages/advantage-1.jpg"
                         loading="lazy"
-                        alt="Шаблон опису фото переваг"
+                        alt="Високоякісні меблі для великої квартири-студії класу люкс"
                         decoding="async"
+                        width="586"
+                        height="350"
                       />
                     </picture>
 
                     <div class="advantages__meta">
-                      <h3 class="advantages__title">Шаблон переваг</h3>
+                      <h3 class="advantages__title">Меблі преміум класу</h3>
                       <p class="advantages__desc">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam.
                       </p>
@@ -467,25 +489,76 @@
                   </div>
                 </a>
               </li>
+
               <li class="advantages__item is-hidden">
                 <a class="advantages__link" href="#">
                   <div class="advantages__thumb">
                     <picture>
-                      <source />
-                      <source />
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./src/images/advantages/advantage-2.webp,
+                          ./src/images/advantages/advantage-2@2x.webp 2x
+                        "
+                      />
                       <img
                         class="advantages__image"
-                        src
+                        srcset="
+                          ./src/images/advantages/advantage-2.jpg,
+                          ./src/images/advantages/advantage-2@2x.jpg 2x
+                        "
+                        src="./src/images/advantages/advantage-2.jpg"
                         loading="lazy"
-                        alt="Шаблон опису фото переваг"
+                        alt="Команда людей за столом перемовин у приміщенні iз великими вікнами"
                         decoding="async"
+                        width="586"
+                        height="350"
                       />
                     </picture>
 
                     <div class="advantages__meta">
-                      <h3 class="advantages__title">Шаблон переваг</h3>
+                      <h3 class="advantages__title">Надійність</h3>
                       <p class="advantages__desc">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam.
+                        За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку
+                        Вінницької області та України
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li class="advantages__item is-hidden">
+                <a class="advantages__link" href="#">
+                  <div class="advantages__thumb">
+                    <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./src/images/advantages/advantage-3.webp,
+                          ./src/images/advantages/advantage-3@2x.webp 2x
+                        "
+                      />
+                      <img
+                        class="advantages__image"
+                        srcset="
+                          ./src/images/advantages/advantage-3.jpg,
+                          ./src/images/advantages/advantage-3@2x.jpg 2x
+                        "
+                        src="./src/images/advantages/advantage-3.jpg"
+                        loading="lazy"
+                        alt="Вантажівка із меблями в дорозі, з видом на місто у долині"
+                        decoding="async"
+                        width="586"
+                        height="350"
+                      />
+                    </picture>
+
+                    <div class="advantages__meta">
+                      <h3 class="advantages__title">Безкоштовна доставка</h3>
+                      <p class="advantages__desc">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
+                        corrupti rerum assumenda sapiente cum eaque aliquam nihil qui sed vel!
+                        Dolorum!
                       </p>
                     </div>
                   </div>
@@ -494,7 +567,7 @@
             </ul>
 
             <button
-              class="back-btn advantages__back-btn"
+              class="back-btn advantages__back-btn advantages__btn"
               type="button"
               aria-label="Попередній слайд"
             >
@@ -504,7 +577,7 @@
             </button>
 
             <button
-              class="next-btn advantages__next-btn"
+              class="next-btn advantages__next-btn advantages__btn"
               type="button"
               aria-label="Наступний слайд"
             >
@@ -605,7 +678,9 @@
                           ./src/images/goods/goods-1@2x.jpg 2x
                         "
                         src="./src/images/goods/goods-1.jpg"
+                        loading="lazy"
                         alt="Велике двоспальне ліжко на тонких фігурних ніжках"
+                        decoding="async"
                       />
                     </picture>
                   </div>
@@ -639,7 +714,9 @@
                           ./src/images/goods/goods-2@2x.jpg 2x
                         "
                         src="./src/images/goods/goods-2.jpg"
+                        loading="lazy"
                         alt="Велике двоспальне ліжко на вузьких прямокутних ніжках"
+                        decoding="async"
                       />
                     </picture>
                   </div>
@@ -670,7 +747,9 @@
                           ./src/images/goods/goods-3@2x.jpg 2x
                         "
                         src="./src/images/goods/goods-3.jpg"
+                        loading="lazy"
                         alt="Велике двоспальне ліжко"
+                        decoding="async"
                       />
                     </picture>
                   </div>
@@ -702,7 +781,9 @@
                           ./src/images/goods/goods-4@2x.jpg 2x
                         "
                         src="./src/images/goods/goods-4.jpg"
+                        loading="lazy"
                         alt="Велике двоспальне ліжко"
+                        decoding="async"
                       />
                     </picture>
                   </div>
@@ -732,7 +813,9 @@
                           ./src/images/goods/goods-5@2x.jpg 2x
                         "
                         src="./src/images/goods/goods-5.jpg"
+                        loading="lazy"
                         alt="Велике двоспальне ліжко"
+                        decoding="async"
                       />
                     </picture>
                   </div>
@@ -766,7 +849,9 @@
                           ./src/images/goods/goods-6@2x.jpg 2x
                         "
                         src="./src/images/goods/goods-6.jpg"
+                        loading="lazy"
                         alt="Велике двоспальне ліжко"
+                        decoding="async"
                       />
                     </picture>
                   </div>
@@ -898,11 +983,11 @@
     <footer class="page-footer">
       <div class="container page-footer__container">
         <div class="to-top-btn-wrapper">
-          <button class="to-top-btn" type="button">
+          <a href="#top" class="to-top-btn" type="button">
             <svg class="to-top-btn__svg" width="18" height="18">
               <use href="./src/images/sprite.svg#icon-to-top-arrow"></use>
             </svg>
-          </button>
+          </a>
         </div>
 
         <div class="page-footer__content">
@@ -978,9 +1063,9 @@
                   <ul class="address__list">
                     <li class="address__item">
                       <a
-                        href="https://goo.gl/maps/NhMhHneALrEVYq1r5"
-                        rel="noopener noreferrer nofollow"
                         class="address__link"
+                        rel="noopener noreferrer nofollow"
+                        href="https://goo.gl/maps/NhMhHneALrEVYq1r5"
                       >
                         <svg class="address__svg" width="24" height="24">
                           <use href="./src/images/sprite.svg#icon-map-pin"></use>
@@ -991,7 +1076,7 @@
                     </li>
 
                     <li class="address__item">
-                      <a href="#" rel="noopener noreferrer nofollow" class="address__link">
+                      <a class="address__link" rel="noopener noreferrer nofollow" href="#">
                         <svg class="address__svg" width="24" height="24">
                           <use href="./src/images/sprite.svg#icon-calendar"></use>
                         </svg>

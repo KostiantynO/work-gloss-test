@@ -1,0 +1,17 @@
+.advantages__meta {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 30px 30px 33px;
+
+  @include transition;
+  transition-property: transform;
+
+  .advantages__link:focus &,
+  .advantages__link:hover & {
+    transform: translateY(-39px);
+  }
+}

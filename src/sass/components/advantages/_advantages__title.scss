@@ -1,0 +1,29 @@
+/* Меблі преміум класу */
+.advantages__title {
+  position: relative;
+
+  display: inline-block;
+
+  @include transition;
+  transition-property: margin;
+
+  .advantages__link:focus &,
+  .advantages__link:hover & {
+    margin-bottom: 18px;
+  }
+
+  @include fz(33px, 700, 1.37, -1.3px); /* Proxima Nova = 36 sp • H3 Headline, lh: 45px */
+  color: var(--color-white);
+
+  /* Rectangle 166 */
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 100%;
+
+    background: var(--color-accent);
+  }
+}

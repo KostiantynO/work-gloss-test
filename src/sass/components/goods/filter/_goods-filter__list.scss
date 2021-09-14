@@ -1,25 +1,13 @@
 .goods-filter__list {
-  @include mq($mobile, $mt: -20px, $ml: -200px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  @include mq($mobile) {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-
-  @include mq($laptop, $mr: 0);
 }
 
 .goods-filter__item {
-  max-width: fit-content;
-
   &:not(:last-child) {
     @include mq(null, $mobile, null, auto, 20px, auto);
-  }
-
-  @include mq($mobile, null, 20px, 0, 0, 200px) {
-    flex-basis: calc(100% / 2 - 200px);
-  }
-
-  @include mq($laptop) {
-    flex-basis: calc(100% / 6 - 200px);
   }
 }

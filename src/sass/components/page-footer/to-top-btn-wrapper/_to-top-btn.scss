@@ -2,6 +2,10 @@
 .to-top-btn {
   @extend %btn;
 
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
   position: relative;
   top: calc(100% - 9px);
   left: -51px + 36px;

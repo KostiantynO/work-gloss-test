@@ -1,0 +1,22 @@
+/* За 14 років на ринку меблів для дому ми стали надійними партнерами на ринку Вінницької області та України */
+.advantages__desc {
+  position: absolute;
+
+  @include fz(18px, null, 1.25);
+
+  color: var(--color-white);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  @include transition;
+  transition-property: transform, opacity, visibility;
+
+  .advantages__link:focus &,
+  .advantages__link:hover & {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+  }
+}

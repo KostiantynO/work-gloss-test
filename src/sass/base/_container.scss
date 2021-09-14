@@ -1,6 +1,6 @@
 .container {
-  contain: content;
-  overflow: hidden;
+  // contain: content;
+  // overflow-x: hidden;
 
   @include paddings($pr: 20px, $pl: 20px);
   @include mq($mobile, $mr: auto, $ml: auto) {

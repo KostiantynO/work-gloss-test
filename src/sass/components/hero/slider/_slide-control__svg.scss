@@ -2,7 +2,10 @@
 }
 
 .slide-control__back-icon {
+  fill: none;
+  stroke: currentColor;
 }
 
 .slide-control__next-icon {
+  fill: var(--color-text-primary);
 }

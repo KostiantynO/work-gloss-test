@@ -1,3 +1,5 @@
 .goods-filter {
-  @include mq($mobile, $pb: 87px);
+  @include mq($mobile, $pb: 87px, $mr: auto, $ml: auto) {
+    max-width: 1920px - 158px - 160px;
+  }
 }

@@ -3,6 +3,11 @@
 
 .slide-control__back-btn {
   margin-right: 8px;
+  color: inherit;
+}
+
+.slide-control__next-btn {
+  color: var(--color-white);
 }
 
 .back-btn {
