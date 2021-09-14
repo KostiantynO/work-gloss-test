@@ -1,12 +1,38 @@
 .furniture__submenu {
   position: absolute;
+  top: 100%;
+  left: -10px;
+
+  z-index: 2;
+
+  min-width: calc(100% + 10px);
+  padding: 10px 0 7px 10px;
+
+  text-align: left;
 
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  transition-property: opacity;
+
+  background-color: var(--color-white);
+
+  transform: translateY(-21px);
   @include transition;
+  transition-property: transform, opacity, visibility;
+
+  .furniture__item:focus-within &,
+  .furniture__item:hover &,
+  .furniture__link:focus + & {
+    visibility: visible;
+    pointer-events: initial;
+    opacity: 1;
+
+    transform: translateY(0);
+  }
 }
 
 .furniture__subitem {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }

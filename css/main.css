@@ -38,7 +38,7 @@ img {
   transition-property: transform, opacity;
 }
 
-.furniture__expand-btn, .back-btn,
+.phones__btn, .furniture__expand-btn, .back-btn,
 .next-btn, .goods-filter__btn, .to-top-btn {
   margin: 0;
   padding: 0;
@@ -258,10 +258,6 @@ body {
   stroke: var(--color-text-primary);
 }
 
-.phones__icon-chevron-big {
-  margin-left: 5px;
-}
-
 .phones__list {
   position: relative;
 }
@@ -306,6 +302,15 @@ body {
   pointer-events: initial;
   opacity: 1;
   transform: translateY(5%);
+}
+
+.phones__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
 }
 
 .top-nav {
@@ -481,11 +486,41 @@ body {
 
 .furniture__submenu {
   position: absolute;
+  top: 100%;
+  left: -10px;
+  z-index: 2;
+  min-width: calc(100% + 10px);
+  padding: 10px 0 7px 10px;
+  text-align: left;
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  transition-property: opacity;
+  background-color: var(--color-white);
+  transform: translateY(-21px);
   transition: var(--time) var(--cubic);
+  transition-property: transform, opacity, visibility;
+}
+
+.furniture__item:focus-within .furniture__submenu,
+.furniture__item:hover .furniture__submenu,
+.furniture__link:focus + .furniture__submenu {
+  visibility: visible;
+  pointer-events: initial;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.furniture__subitem:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.furniture__sublink {
+  transition: var(--time) var(--cubic);
+  transition-property: color;
+}
+
+.furniture__sublink:focus, .furniture__sublink:hover {
+  color: #40c595;
 }
 
 .page-footer__logo {
