@@ -495,10 +495,10 @@ body {
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
-  background-color: var(--color-white);
+  background-color: transparent;
   transform: translateY(-21px);
   transition: var(--time) var(--cubic);
-  transition-property: transform, opacity, visibility;
+  transition-property: transform, opacity, visibility, background-color;
 }
 
 .furniture__item:focus-within .furniture__submenu,
@@ -507,6 +507,7 @@ body {
   visibility: visible;
   pointer-events: initial;
   opacity: 1;
+  background-color: var(--color-white);
   transform: translateY(0);
 }
 
