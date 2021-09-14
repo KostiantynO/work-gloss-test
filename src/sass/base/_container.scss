@@ -14,5 +14,4 @@
   @include mq($laptop, $pr: 51px, $pl: 51px) {
     max-width: map-get($breakpoints, $desktop);
   }
-  outline: 1px dashed red;
 }
